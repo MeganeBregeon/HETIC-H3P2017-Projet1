@@ -1,1 +1,21 @@
-style.css
+/* CSS pour le projet JS*/
+
+body{
+	background-color: #5d6266;
+	color: white;
+	font-family: Helvetica,Arial;
+}
+
+#centre{
+	width: 310px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#map{
+	width: 305px;
+	height:320px;
+}
+
