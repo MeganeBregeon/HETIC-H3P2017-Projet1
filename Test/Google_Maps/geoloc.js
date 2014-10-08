@@ -18,25 +18,31 @@ $(function()
                 
                 //Center
                 center = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-                                       
+                 
+                // Création de l'icône		
+                 var myMarkerImage = new google.maps.MarkerImage('img/position_perso.png',
+                new google.maps.Size(50, 50),
+                new google.maps.Point(0, 0),
+                new google.maps.Point(25, 25));
+                      
                 //Marker
                 if(marker === null)
-                    marker = new google.maps.Marker({position:center,map:map});
+                    marker = new google.maps.Marker({position:center,map:map,icon: myMarkerImage});
                 else
                     marker.setPosition(center);
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------               
          // Coordonnées d'un défilé 
 		var myLatlng = new google.maps.LatLng(48.85273555769621,2.4280994430596543);
+		
+				
 		// Création du marker
 		var myMarker = new google.maps.Marker({
 			// Coordonnées du marker
 			position: myLatlng, 
 			map: map,
-			// Nous ajoutons un paramètre supplémentaire
-			// icon pour lequel nous donnons le MarkerImage
-			// que nous venons de créer.
-	/*		icon: myMarkerImage,		*/
+			// Nous ajoutons un paramètre supplémentaire icon pour lequel nous donnons le MarkerImage que nous venons de créer.
+			//icon: myMarkerImage,		
 			title: "Défilé Exemple"
 		});
 		// Options de la fenêtre
@@ -53,10 +59,12 @@ $(function()
 		google.maps.event.addListener(myMarker, 'click', function() {
 			myInfoWindow.open(map,myMarker);
 		});
- // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                      
+ // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+ 
+                     
                 //Radius
                 if(circle === null)
-                    circle = new google.maps.Circle({map:map,fillColor:'#00c7ff',strokeWeight:0});
+                    circle = new google.maps.Circle({map:map,fillColor:'rgba(41,152,212,0.9)',strokeWeight:0});
                 circle.bindTo('center',marker,'position');
                 circle.setRadius(position.coords.accuracy);
                 
