@@ -1,5 +1,5 @@
 	window.onload = function() {
-		// Défilé pas loin
+		// Coordonnées d'un défilé 
 		var myLatlng = new google.maps.LatLng(48.85273555769621,2.4280994430596543);
 		
 		// Carte centrée sur le marker
@@ -27,7 +27,7 @@
 			// icon pour lequel nous donnons le MarkerImage
 			// que nous venons de créer.
 	/*		icon: myMarkerImage,		*/
-			title: "Cinéma Pathé Bellecour"
+			title: "Défilé Exemple"
 		});
 		
 		// Options de la fenêtre

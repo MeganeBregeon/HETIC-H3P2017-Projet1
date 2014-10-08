@@ -19,3 +19,8 @@ body{
 	height:320px;
 }
 
+#coords{text-align: left;}
+
+#titre_marker{
+	color: black;
+}
