@@ -18,11 +18,12 @@ ini_set("display_errors", 1);
         $result_type = $_POST['result_type'];
 
         if(empty($nbTweet)){
-            $nbTweet = 18;
+            $nbTweet = 1;
         }
 
         $tweets = $twitter->get("https://api.twitter.com/1.1/search/tweets.json?q=".$keywords."&result_type=".$result_type."&count=".$nbTweet);
     }
+
 ?>
 
 <!doctype html>
@@ -35,7 +36,6 @@ ini_set("display_errors", 1);
 </head>
 
 <body><br/>
-
     <h1 style="text-align :center;">Paris Fashion Week</h1>
 
 <div id="search"><br/>
@@ -89,10 +89,13 @@ function parseTweet($text) {
             <?php
                 if(isset($_POST['keywords'])):
                 foreach($tweets->statuses as $tweet):
+                //$json = json_encode ( mixed $tweet [, int $options = 0 [, int $depth = 512 ]] );
+                $data=json_encode($tweet, JSON_HEX_QUOT | JSON_HEX_TAG);
+                $data = str_replace("\\/", "/", $data);
+                echo $data;
             ?>
 
-
-    <div style="height:550px;" class="col-sm-2 col-md-2">
+   <!--  <div style="height:550px;" class="col-sm-2 col-md-2">
      <div class="thumbnail">
         
 
@@ -128,7 +131,7 @@ function parseTweet($text) {
 
 </div>
 
-            
+             -->
             <?php
                 endforeach;
                 else:
