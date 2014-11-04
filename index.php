@@ -4,12 +4,13 @@
 error_reporting(E_ALL); 
 ini_set("display_errors", 1);
 
-    $ConsumerKey        =   "bKvM2m7e9V01mcCxKXOxJ20Ry";
-    $ConsumerSecret     =   "kUN7STLKULZIwDLpGpZDwGZb9LrR8u5cVs37JtoSe6YgmXlquY";
-    $AccessToken        =   "117548673-emcSS7yP8eX58c5kPCrvl3HYdtRBIMljrkyZrGuH";
-    $AccessTokenSecret  =   "uQ4OYy6yTdLImIdm02mjGHVLbnCeWL1Qkfdyc8GctUrgM";
+    $ConsumerKey        =   "pWOG0ALEL5nhpZm6QAIC3XFIt";
+    $ConsumerSecret     =   "BKFmcPv0DGX7DC6xpmktl84cx3xwiwYzgFF9VbBlFqIco3k9ie";
+    $AccessToken        =   "117548673-lFyUdl8jdfLoghvwo0GznmE8AEtCk5RoNhCkkgSE";
+    $AccessTokenSecret  =   "bsbYKZ2BmZ8ETlDXx5iKUv4QgNuWpm6iakWjkehf4mF7z";
 
     $twitter = new TwitterOAuth($ConsumerKey, $ConsumerSecret, $AccessToken, $AccessTokenSecret);
+    $connection = new TwitterOAuth($ConsumerKey, $ConsumerSecret, $AccessToken, $AccessTokenSecret);
     
     if(isset($_POST['keywords'])){
         $keywords = $_POST['keywords'];
@@ -74,7 +75,16 @@ ini_set("display_errors", 1);
                 <input type="submit" name="OK" />
             </form>
 -->
-
+    <?php
+function parseTweet($text) {
+    $text = preg_replace('#http://[a-z0-9._/-]+#i', '<a  target="_blank" href="$0">$0</a>', $text); //Liens
+    $text = preg_replace('#@([a-z0-9_]+)#i', '<a  target="_blank" href="http://twitter.com/$1">@$1</a>', $text); //Pseudos
+    $text = preg_replace('# \#([a-z0-9_-]+)#i', ' <a target="_blank" href="http://search.twitter.com/search?q=%23$1">#$1</a>', $text); //Hashtags
+    $text = preg_replace('#https://[a-z0-9._/-]+#i', '<a  target="_blank" href="$0">$0</a>', $text); //Liens
+    return $text;
+}
+?>
+<div id="results">
             <hr>
             <?php
                 if(isset($_POST['keywords'])):
@@ -82,25 +92,33 @@ ini_set("display_errors", 1);
             ?>
 
 
-    <div style="height:250px;" class="col-sm-4 col-md-4">
+    <div style="height:550px;" class="col-sm-2 col-md-2">
      <div class="thumbnail">
-        <div class="caption">
+        
 
             <p class="tweet">
-                   
+                    <div>
+                        <img src="<?php echo $tweet->entities->media[0]->media_url; ?>" width="100%" height="auto"/>
+                    </div>
+            <div class="caption">       
                     <img src="<?php echo $tweet->user->profile_image_url; ?>" alt="user picture" />
-                    <?php echo $tweet->user->name, ' @', $tweet->user->screen_name ;?>
+                    <?php echo'<a target="_blank" href="http://twitter.com/',$tweet->user->screen_name, '">', $tweet->user->name,'</a> @', $tweet->user->screen_name ;?>
                 </span>
                 <br/>
                 <span>
-                    <?php echo $tweet->text; ?>
+                    <?php echo parseTweet($tweet->text); ?>
                 </span>
                 <br/>
                 <span>
                     Retweets: <?php echo $tweet->retweet_count; ?>
                     Favorites: <?php echo $tweet->favorite_count; ?> <br/>
                     Date : <?php echo $tweet->created_at; ?>
-                
+                    Source : <?php echo $tweet->created_at; ?>
+                    <br/>
+                    <?php 
+                        $status = $connection->post('statuses/retweet/524861550696603648');
+                        print_r($status);
+                    ?>
             </p>
 
         </div>
@@ -109,6 +127,7 @@ ini_set("display_errors", 1);
 
 
 </div>
+
             
             <?php
                 endforeach;
@@ -119,7 +138,7 @@ ini_set("display_errors", 1);
                 endif;
             ?>
         </div>
-
+</div>
             <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
