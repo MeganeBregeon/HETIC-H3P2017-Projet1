@@ -1,0 +1,28 @@
+{
+        "events" : [
+            {
+                "titre" : "CHANEL", 
+                "sous_titre" : "Collection Printemps / Été ",             
+                "timestamp" : "1414540879",
+                "image" : "images/chanel.jpg",
+                "lat" : "47.567328",
+                "lng" : "2.567328"
+            },     
+            {
+                "titre" : "GUESS", 
+                "sous_titre" : "Collection Automne / Hiver ",             
+                "timestamp" : "1414540979",
+                "image" : "images/guess.jpg",
+                "lat" : "47.567728",
+                "lng" : "2.567628"
+            },
+            {
+                "titre" : "GUCCI", 
+                "sous_titre" : "Collection mi-saison 2015 ",             
+                "timestamp" : "1414541679",
+                "image" : "images/gucci.jpg",
+                "lat" : "47.567428",
+                "lng" : "2.567228"
+            }
+        ]
+}
