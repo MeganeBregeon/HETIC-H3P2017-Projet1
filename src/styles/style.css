@@ -59,7 +59,7 @@ html, body {
 }
 
 #menu:last-child{
-	border-left: 1px solid red;
+	/*border-left: 1px solid red;*/
 
 }
 
@@ -132,7 +132,7 @@ html, body {
 	background-color: #FAFAFA;
 	padding: 5% 8%;
 }
-
+/*
 .small-card{
 	height: 190px;
 	width: 190px;
@@ -146,7 +146,7 @@ html, body {
 	background: #8CA898;
 	display: inline-block;
 }
-
+*/
 
 
 
@@ -157,7 +157,37 @@ footer{
 	height: 100px;
 	width: 100%;
 	background-color: black; 
-	color: #FFFF;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 15px;
+
 }
+
+
+
+/******** LIVE PAGE *******/
+
+#liste_live{
+
+	width: 800px;
+	margin: auto;
+
+}
+
+
+.event{
+	float: left;
+	margin-left: 20px;
+	border: 1px solid black;
+	width: 100px;
+	padding: 20px;
+}
+
+
+
+
+
+
+
 
 
