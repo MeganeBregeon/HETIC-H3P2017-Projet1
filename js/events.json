@@ -6,7 +6,8 @@
                 "timestamp" : "1417086000",
                 "image" : "images/createur/corrienielsen.jpg",
                 "lat" : "48.864082",
-                "lng" : "2.344156"
+                "lng" : "2.344156",
+                "video" : "videos/intro.mp4"
             },
             {
                 "titre" : "CHRISTINE PHUNG",
@@ -14,7 +15,8 @@
                 "timestamp" : "1417089600",
                 "image" : "images/createur/christinephung.jpg",
                 "lat" : "48.848989",
-                "lng" : "2.356586"
+                "lng" : "2.356586",
+                "video" : "videos/intro.mp4"
             },
             {
                 "titre" : "PASCAL MILLET ",
@@ -22,7 +24,8 @@
                 "timestamp" : "1417096800",
                 "image" : "images/createur/pascalmillet.jpg",
                 "lat" : "48.864804",
-                "lng" : "2.296514"
+                "lng" : "2.296514",
+                "video" : "videos/intro.mp4"
             },
             {
                 "titre" : "ANREALAGE",
@@ -30,7 +33,8 @@
                 "timestamp" : "1417104000",
                 "image" : "images/createur/anrealage.jpg",
                 "lat" : "48.858164",
-                "lng" : "2.334424"
+                "lng" : "2.334424",
+                "video" : "videos/intro.mp4"
             },
             {
                 "titre" : "JACQUEMUS",
@@ -38,7 +42,8 @@
                 "timestamp" : "1417111200",
                 "image" : "images/createur/jacquemus.jpg",
                 "lat" : "48.840847 ",
-                "lng" : "2.36965"
+                "lng" : "2.36965",
+                "video" : "videos/intro.mp4"
             },
             {
                 "titre" : "CHRISTOPHE LEMAIRE",
@@ -46,7 +51,8 @@
                 "timestamp" : "1417165200",
                 "image" : "images/createur/christophelemaire.jpg",
                 "lat" : "48.833903",
-                "lng" : "2.377615"
+                "lng" : "2.377615",
+                "video" : "videos/intro.mp4 "
             },
             {
                 "titre" : "GUY LAROCHE",
