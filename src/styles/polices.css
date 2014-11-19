@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'entypo_social';
+  src: url('../fonts/entypo_social/entypo-social.eot');
+  src: url('../fonts/entypo_social/entypo-social.woff') format('woff'),
+       url('../fonts/entypo_social/entypo-social.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/entypo_social/entypo-social.svg#QuadrantaBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'entypo';
+  src: url('../fonts/entypo_social/entypo.eot');
+  src: url('../fonts/entypo_social/entypo.woff') format('woff'),
+       url('../fonts/entypo_social/entypo.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/entypo_social/entypo.svg#QuadrantaBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

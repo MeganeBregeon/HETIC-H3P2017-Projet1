@@ -4,7 +4,6 @@ html, body {
 	font-family: 'Open sans', sans-serif;
 }
 
-
 /* HOME PAGE */
 
 /* VIDEO */
@@ -20,10 +19,11 @@ video#bgvid {
 	background-size: cover;
 }
 
+/*
 video {
-/*  -webkit-filter: brightness(.5);*/
+  -webkit-filter: brightness(.5);
 }
-
+*/
 
 /* PATERN */
 /*div .pattern{
@@ -33,15 +33,16 @@ video {
 	height: 100%;
 }
 */
-/* HOME CONTENT */
 /*#home {
 	-webkit-filter: grayscale(50%);
 	height:100%;
 }*/
 
+/* HOME CONTENT */
+
 #start {
-	padding-top: 20%;
-	width: 18.4%;
+	padding-top: 13%;
+	width: 34.4%;
 	margin: auto;
 }
 #logo {
@@ -54,58 +55,30 @@ video {
 }
 
 #enter {
-	margin: auto;
+	margin: 80px auto;
 	width: 234.3px;
 	height : 57.5px;
+
+	color: #ffffff;
+	font-weight: 100;
+	border: 1px solid #ffffff;
+	background-color: rgba(255,255,255,0.1);
+	cursor: pointer;
+	-webkit-transition: all .2s ease-in;
+}
+
+#enter:hover {
+  background-color: rgba(255,255,255,0.2);
+  font-weight: 600;
+    -webkit-transform: scale(1.03);
 }
 
 #enter p {
-	height : 57.5px;
-	text-decoration: none;
+	margin-top: 20px;
 
-	color: #ffffff;
-	border: 1px solid #ffffff;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
 
-	font-size: 26px;
-	font-weight: 100;
 	text-align: center;
 }
-
-
-/*#home h1 {
-	padding-top: 22%;
-  	background-position: center;
-	width: auto;
-	left: 24.9%;
-	text-shadow: 2px 1px 10px grey;
-	height: 80px;
-	text-align: center;
-	font-size: 46px;
-	color: white;
-	font-weight: 300;
-}
-*/
-
-/* HOME BOUTON */
-/*#start {
-text-decoration: none;
-text-transform: uppercase;
-
-color: #ffffff;
-border: 5px solid #ffffff;
-
-font-size: 24px;
-
-text-align: center;
-margin: auto;
-width: 10%;
-padding: 1%;
-cursor: pointer;
--webkit-transition: all .2s ease-in;
-}
-*/
-/*#start:hover {
-  background-color: rgba(255,255,255,0.5);
-  color: pink;
-}
-*/
