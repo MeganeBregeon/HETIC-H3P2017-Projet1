@@ -1,7 +1,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: 'Avenir Next', 'Times', sans-serif;
+	font-family: 'Open sans', sans-serif;
 }
 
 
@@ -24,35 +24,70 @@ video {
 /*  -webkit-filter: brightness(.5);*/
 }
 
+
 /* PATERN */
-div .pattern{
-	/*border: 20px solid white;*/
+/*div .pattern{
+	border: 20px solid white;
 	background-image: url(../img/pattern2.png);
 	background-repeat: repeat;
 	height: 100%;
 }
-
+*/
 /* HOME CONTENT */
-#home {
-/*	-webkit-filter: grayscale(50%);*/
+/*#home {
+	-webkit-filter: grayscale(50%);
 	height:100%;
+}*/
+
+#start {
+	padding-top: 20%;
+	width: 18.4%;
+	margin: auto;
 }
-#home h1 {
+#logo {
+	width: 100%;
+	height: 100%;
+}
+
+#logo img {
+	width: 100%;
+}
+
+#enter {
+	margin: auto;
+	width: 234.3px;
+	height : 57.5px;
+}
+
+#enter p {
+	height : 57.5px;
+	text-decoration: none;
+
+	color: #ffffff;
+	border: 1px solid #ffffff;
+
+	font-size: 26px;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+/*#home h1 {
 	padding-top: 22%;
   	background-position: center;
 	width: auto;
 	left: 24.9%;
-
-/*	text-shadow: 2px 1px 10px grey;*/
+	text-shadow: 2px 1px 10px grey;
 	height: 80px;
 	text-align: center;
 	font-size: 46px;
 	color: white;
 	font-weight: 300;
 }
+*/
 
 /* HOME BOUTON */
-#start {
+/*#start {
 text-decoration: none;
 text-transform: uppercase;
 
@@ -68,8 +103,9 @@ padding: 1%;
 cursor: pointer;
 -webkit-transition: all .2s ease-in;
 }
-
-#start:hover {
+*/
+/*#start:hover {
   background-color: rgba(255,255,255,0.5);
   color: pink;
 }
+*/
