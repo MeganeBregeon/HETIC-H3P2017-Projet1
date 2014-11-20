@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<title>Paris Fashion Week</title>
 	<!--- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -9,31 +10,21 @@
 	<!--- CSS-->
 	<link rel="stylesheet" href="src/styles/reset.css">
 	<link rel="stylesheet" href="src/styles/style.css">
+	<link rel="stylesheet" href="src/styles/feed.css">
 </head>
 
 <body>
-
-
 	<div class="navi">
-
 		<div id="logo">   
 			<h2>
 					<a href="#"><img src="src/img/logo.png"></a>
 			</h2> 
 		</div>
-
 		<nav id="menu">
-
 			<a href="feed.html">Actualités</a>
 			<a href="live.html">Live</a>
-
 		</nav>
-
-
 	</div>
-
-	
-
 
 	<nav id="filter">
 				<a href="">Voir tout</a>
@@ -43,10 +34,35 @@
 	</nav>
 
 
-	<div class="board">
+
+
+
+	<!-- <div class="board"> -->
+	
+	<form id="formajax" method="GET" action="" >
+	  <p>
+	  	<input type="text" placeholder="Texte Ici" name="key">
+	    <input type="submit" value="Lancer">
+	  </p>
+	</form>
+		<br>
 		
+		<div id="jstwitter">
+
+
+		</div> 	
+
+
+
+<script language="JavaScript">
 		
-	</div>
+		function affiche_result(tweets_recus){
+			console.log(tweets_recus); 
+		}
+		
+</script>
+		
+	<!-- </div> -->
 
 
 	<footer>
@@ -59,6 +75,9 @@
 		</ul>
 	</footer>
 
+<script src="js/feed/model.js"></script>
+<script src="js/feed/ui.js"></script>
+<script src="js/feed/control.js"></script>
 
 </body>
 </html>
