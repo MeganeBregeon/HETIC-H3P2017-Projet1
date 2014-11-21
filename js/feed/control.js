@@ -11,8 +11,9 @@ function searchtweet(e){
 	console.log('keyword = '+keywords);
 
 	model.getTWEET(keywords, function(tweetback){
-		model.selectTWEET(tweetback, function(mediatweet){
-			ui.displaytweet(mediatweet);
-		});
+			model.selectTWEET(tweetback, function(mediatweet){
+					ui.displaytweet(mediatweet);
+			});
 	});
+
 };
