@@ -7,7 +7,8 @@
                 "image" : "images/createur/corrienielsen.jpg",
                 "lat" : "48.864082",
                 "lng" : "2.344156",
-                "video" : "videos/intro.mp4"
+                "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "
             },
             {
                 "titre" : "CHRISTINE PHUNG",
@@ -16,8 +17,8 @@
                 "image" : "images/createur/christinephung.jpg",
                 "lat" : "48.848989",
                 "lng" : "2.356586",
-                "video" : "videos/intro.mp4"
-            },
+                "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "            },
             {
                 "titre" : "PASCAL MILLET ",
                 "lieu" : "Palais de Tokyo",
@@ -25,8 +26,8 @@
                 "image" : "images/createur/pascalmillet.jpg",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
-                "video" : "videos/intro.mp4"
-            },
+                "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "            },
             {
                 "titre" : "ANREALAGE",
                 "lieu" : "Les Beaux Arts de Paris",
@@ -34,7 +35,8 @@
                 "image" : "images/createur/anrealage.jpg",
                 "lat" : "48.858164",
                 "lng" : "2.334424",
-                "video" : "videos/intro.mp4"
+                 "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "
             },
             {
                 "titre" : "JACQUEMUS",
@@ -43,7 +45,8 @@
                 "image" : "images/createur/jacquemus.jpg",
                 "lat" : "48.840847 ",
                 "lng" : "2.36965",
-                "video" : "videos/intro.mp4"
+                 "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "
             },
             {
                 "titre" : "CHRISTOPHE LEMAIRE",
@@ -52,7 +55,8 @@
                 "image" : "images/createur/christophelemaire.jpg",
                 "lat" : "48.833903",
                 "lng" : "2.377615",
-                "video" : "videos/intro.mp4 "
+                 "video_ogv" : "videos/intro.ogv ",
+                "video_mp" : "videos/intro.mp4 "
             },
             {
                 "titre" : "GUY LAROCHE",

@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 var control={};
 
@@ -11,7 +11,8 @@ model.getJSON('js/events.json', function(data) {
 	// si model.getJSON récup events :
 	UI.affiche_liste_events(data,function(){
 		console.log('évènements récupérés');	// une fois qu'on a affiché les évènements
-		recup_distance(data);								// on va chercher leur distance
+		//recup_distance(data);								// on va chercher leur distance
+		appel_video(data);
 	});
 },function(status) {
 	// si model.getJSON récup pas events :
@@ -19,7 +20,7 @@ model.getJSON('js/events.json', function(data) {
 });
 
 //––––––––––––––––––––––––––––––––
-
+/*
 function recup_distance(data){
 
 	model.generate_tableau_coords_events(data, function(tableau_coords_events){			// lorsque le tableau de coords est fait
@@ -33,45 +34,18 @@ function recup_distance(data){
 	});
 
 }
-
-
-// CE QUI SUIT N'EST PAS ENCORE FONCTIONNEL
-
-/*
-var timestamp_now = new Date().getTime();
-var timenow = Math.floor((timestamp_now/1000));
-var min_now = timenow/60;
-
-
-var timestamp_event = 1415999632;
-var min_event = Math.floor(timestamp_event/60);
-
-var min_restant = Math.floor(min_event-min_now);
-
-var affichage;
-
-if (temps_restant<1){
-	affichage="évènement passé";
-}
-else{
-	var days_restant = Math.floor(min_restant/60/24);
-	var hours = Math.floor(min_restant/60);
-
-	var heures_affichees;
-
-	if(hours>0 && days<1){
-		var heures_affichees
-		affichage="il reste "+hours+" h et "+(Math.floor(min_restant)-hours*60)+" min";
-	}
-	else if (hours>0 && days>0){
-		affichage="il reste "+days+"j,"+hours-days*24+" h et "+(Math.floor(min_restant)-hours*60)+" min";
-	}
-	else{
-		affichage="il reste "+Math.floor(min_restant)+" min";
-	}
-}*/
-/*
-console.log(timenow);
-console.log("RESTE : "days+"j "+hours+" h "+min_restant+"min");
-console.log('affichage = ',affichage);
 */
+
+
+
+function appel_video(data){
+	model.calcul_video_live(data,function(most_recent_video){
+		
+		UI.affiche_video_a_la_une(most_recent_video,function(){
+			console.log('OK = ');	
+		});
+	});
+}
+
+
+

@@ -1,6 +1,12 @@
 
 /******** LIVE PAGE *******/
 
+video{
+	object-fit:none;
+
+}
+
+
 #liste_live{
 
 	margin: auto;
@@ -20,6 +26,7 @@
 	border-radius: 5px;
 	font-weight: 100;
 	font-size: 10px;
+
 
 }
 

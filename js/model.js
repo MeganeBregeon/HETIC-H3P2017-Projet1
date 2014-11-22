@@ -25,6 +25,30 @@ var model = {
     },
 
 
+
+    calcul_video_live : function(data,callback_video){
+
+      var timestamp_now = new Date().getTime();//recup date du jour
+       
+      var most_recent_video = 0;
+
+      for (var i=0;i<data.events.length;i++){
+
+        if(data.events[i].timestamp > most_recent_video){
+
+          most_recent_video = data.events[i];
+
+        }
+
+      }
+      callback_video.call(this,most_recent_video); 
+
+
+
+    },
+
+
+
     calcul_temps_restant : function(timestamp_event){
       var timestamp_now = new Date().getTime();
       var timenow = Math.floor((timestamp_now/1000));
@@ -61,7 +85,9 @@ var model = {
 
     ecoute: function(){
     console.log(span_iti);
+
   }
+
 
 
 }

@@ -2,9 +2,43 @@
 
 var UI = {
 
+		affiche_video_a_la_une : function(most_recent_video,callback_video){
+
+			var video_on_play = document.getElementById('video_on_live');
+
+			//création l'élément vidéo
+			var element_video = document.createElement('video');
+			element_video.classList.add('livestream');
+			video_on_play.appendChild(element_video);
+
+
+
+			//SRC FICHIERS VIDEOS					
+			element_video.setAttribute('src',most_recent_video.video_ogv);						// assigne l'url de l'image
+			element_video.setAttribute('src',most_recent_video.video_mp);						
+
+			//PLAYER VIDEO
+			element_video.setAttribute('class','video_event');							
+			// assigne la classe video_event
+			element_video.autoplay = true;
+			element_video.load(); 
+
+
+
+			callback_video.call(this);
+
+		},
+
+
+		// +','+data.events[i].videomp4
+
+
+
 	affiche_liste_events : function(data,callback_final){
 
 		for (var i=0;i<data.events.length;i++){
+
+
 
 			var div_a_remplir=document.getElementById('liste_live');
 
@@ -20,14 +54,7 @@ var UI = {
 			image.setAttribute('class','image_event');							// assigne la classe image_event
 			div_event.appendChild(image);										// place l'image dans la div_event
 
-			// Video :
-			// var image=document.createElement('video');							// crée l'élément html img
-			// image.setAttribute('src',data.events[i].video);						// assigne l'url de l'image
-			// image.setAttribute('class','video_event');							// assigne la classe image_event
-			// div_event.appendChild(image);										// place l'image dans la div_event
-
-
-
+		
 			// Titre :
 			var texte_titre=document.createTextNode(data.events[i].titre);		// récup. le texte du titre
 			var titre=document.createElement('h3');								// crée l'élément html h3 pour le titre
@@ -41,17 +68,6 @@ var UI = {
 			lieu.appendChild(texte_lieu);										// place le texte dans <h6>...</h6>
 			lieu.setAttribute('class','sous_titre_event');						// assigne la classe
 			div_event.appendChild(lieu);										// place le sous titre dans la div_event
-
-
-
-		/*	// TRI DU TEMPS  :
-			var texte_temps=document.createTextNode(model.calcul_temps_restant(data.events[i].timestamp));
-			var temps=document.createElement('h5'); // crée l'élément html h6 pour le texte
-			temps.appendChild(texte_temps); // place le texte dans <h6>...</h6>
-
-*/
-
-
 
 
 		// Temps restant :
