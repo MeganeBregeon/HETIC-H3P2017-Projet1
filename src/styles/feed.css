@@ -2,14 +2,121 @@
 
 #page_content {
 	background-color: #FAFAFA;
+	padding-top: 30px;
 }
 
+/*FORM*/
+form {
+	display: table;
+	margin: auto;
+}
+
+#result_type {
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid #E7E7E7;
+	background-color: #fff;
+	font-size: 16px;
+	font-family: 'Avenir next', sans-serif;
+}
+
+.input_text {
+	vertical-align: middle;
+	position: relative;
+	
+	font-size:22px; 
+	font-family: 'Avenir next', sans-serif;
+	font-weight: 300;
+	color: black; 
+	
+
+	border:solid 1px #E7E7E7; 
+	width:330px;
+	height: 27px;
+
+	padding: 6px 12px;
+
+	-webkit-appearance: textfield;
+	background-color: white;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	cursor: auto;
+
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+}
+
+.input_search {
+	position: relative;
+	display: inline-block;
+
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	font-size: 16px;
+	line-height: 1.42857143;
+	
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	border-radius: 4px;
+
+	-webkit-user-select: none;
+	background-color: #ffffff;
+
+	vertical-align: middle;
+	margin-left: -55px;
+	height: 39px;
+}
+
+.input_search {
+	font-family: 'entypo_social','entypo';
+	font-size: 50px;
+	line-height: 0.7;
+	width: 50px;
+	color: black;
+}
+
+.input_text:focus, .input_search:focus, #result_type:focus{ 
+	border:solid 1px #E7E7E7;
+/*	: linear-gradient(to right, pink, blue);*/
+
+	 /* -moz-border-image: -moz-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  -webkit-border-image: -webkit-linear-gradient(left, #3acfd5 0%, #3a4ed5 100%);
+	  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+*/
+	border-image-slice: 1;
+	outline: -webkit-focus-ring-color auto 0px;
+}
+
+ .input_search:focus{
+	border:solid 1px transparent; 	
+ }
+
+.divider {
+	margin: 0.5em 0 0.5em 0;
+	border: 0;
+	height: 1px;
+	width: 100%;
+	display: block;
+	background-image : linear-gradient(to right, pink, blue);
+}
 /* jstwitter */
 #jstwitter {
 	position: relative;
 	width: 60.459%;
-	height: 1000px;
+
 	margin: auto;
+	margin-top: 30px;
 }
 
 /*colums*/
