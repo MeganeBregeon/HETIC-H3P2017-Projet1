@@ -2,7 +2,7 @@
 
 var model = {
 
-	getTWEET : function(keywords, callback_tweetback){
+	getTWEET : function(keywords,result_type,callback_tweetback){
 
 		var tweetback;
 		var req = null;
@@ -29,7 +29,6 @@ var model = {
 						if(req.status == 200){
 							// ICI ON FAIT CE QU'ON VEUT DU  req.responseText (texte de réponse avec le JSON dedans)
 							tweetback=JSON.parse(req.responseText); // on stocke les résultats
-							console.log(tweetback);
 							callback_tweetback.call(this,tweetback);
 						}
 						else{
@@ -38,12 +37,11 @@ var model = {
 						}
 					}
 				};
-				req.open("GET", "get_tweets.php?keywords="+keywords, true); 	// envoi des paramètres à la connexion php
+				req.open("GET", "get_tweets.php?keywords="+keywords+"&result_type="+result_type, true); 	// envoi des paramètres à la connexion php
 				req.send(null);
 	},
 
 	selectTWEET : function(tweetback, callback_mediatweet){
-		console.log(tweetback);
 		var mediatweet = [];
 
 		for (var i=0;i<tweetback.length;i++){
@@ -53,8 +51,34 @@ var model = {
 					else {}
 		}
 		callback_mediatweet.call(this, mediatweet);
+	},
+
+	getINSTAGRAM : function(keywords,mediatweet,callback_instaback){
+
+    	var client_id = '5f889f33af784253a5225251213b4efe';
+
+    	$.ajax({
+	    	url      : 'https://api.instagram.com/v1/tags/'+keywords+'/media/recent?client_id='+client_id,
+		    dataType : 'jsonp',
+		    success  :  function (result) {		    				
+		    				//model.getVINE(keywords,mediatweet,result.data);
+		    				ui.displaysocial(mediatweet,result.data);
+						}
+	    });
+	},
+
+	getVINE : function(keywords,mediatweet,instas){
+
+		$.ajax({
+	    	url      : 'https://api.vineapp.com/timelines/tags/'+keywords,
+		    dataType : 'jsonp',
+		    success  :  function () {
+		    				console.log('ok');    				
+		    				//ui.displaysocial(mediatweet,instas);
+						    //callback_instaback(this, tableau_results);	le callback modifie le tableau !! 
+						}
+	    });	
+
 	}
-
-
 }
 

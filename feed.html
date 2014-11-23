@@ -27,16 +27,20 @@
 	</div>
 
 	<nav id="filter">
-				<a href="">Voir tout</a>
-				<a href="">Célébrités</a>
-				<a href="">Créateurs</a>
-				<a href="">Styles</a>
+				<a href="" id="see_all">Voir tout</a>
+				<a href="" id="celebrity">Célébrités</a>
+				<a href="" id="creator">Créateurs</a>
+				<a href="" id="styles">Styles</a>
 	</nav>
 
 
 	<form id="formajax" method="GET" action="" >
 	  <p>
-	  	<input type="text" placeholder="Texte Ici" name="key">
+	  	<select name="result_type" type="button" id="result_type">
+	  		<option value="popular">Popular</option>
+	  		<option value="recent">Recent</option>
+	  	</select>
+	  	<input type="text" placeholder="Texte Ici" id="key" value="fashion">
 	    <input type="submit" value="Lancer">
 	  </p>
 	</form>
@@ -46,12 +50,11 @@
 
 		<div id="jstwitter">
 
-
 		</div>
 
 
 
-
+<!-- 
 	<footer>
 		<ul>
 			<li>Coralie Amable</li>
@@ -61,7 +64,7 @@
 			<li>Joanna Denis</li>
 		</ul>
 	</footer>
-
+ -->
 
 	<!--–––––––––––––––––––––––––––––––––––
 	<script language="JavaScript">
@@ -69,6 +72,7 @@
 	console.log(tweets_recus);
 }</script>
 –––––––––––––––––––––––––––––––––––-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 <script src="js/feed/model.js"></script>
 <script src="js/feed/ui.js"></script>

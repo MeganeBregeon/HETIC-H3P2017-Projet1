@@ -1,19 +1,35 @@
 "use strict";
 
 var clicksearch = document.getElementById('formajax');
-clicksearch.addEventListener('submit', searchtweet, false);
+clicksearch.addEventListener('submit', searchsocial, false);
 
-function searchtweet(e){
+var celebrity=document.getElementById('celebrity');
+celebrity.addEventListener('submit', searchcelebrity, false);
+
+
+function searchsocial(e){
 	e.preventDefault();
-	var keywords = document.querySelector("input[name='key']").value;
-	//var keywords = document.ajax.key.value;	// récupère le texte saisi dans le formulaire
+	var keywords = document.getElementById('key').value;
+	console.log(keywords);
+	var result_type = document.querySelector("select[name='result_type']").value;
 
-	console.log('keyword = '+keywords);
 
-	model.getTWEET(keywords, function(tweetback){
+	model.getTWEET(keywords, result_type, function(tweetback){
 			model.selectTWEET(tweetback, function(mediatweet){
-					ui.displaytweet(mediatweet);
+				model.getINSTAGRAM(keywords, mediatweet, function(tableau_results){
+		    		
+    			});
 			});
 	});
+}
 
-};
+
+function searchcelebrity(e){
+	e.preventDefault();
+
+	
+	
+
+
+	//var keywords = document.getElementById('key').value;
+}

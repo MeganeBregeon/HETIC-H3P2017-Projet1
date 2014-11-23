@@ -15,12 +15,12 @@
             if(isset($_GET['keywords'])){
                     $keywords = $_GET['keywords'];
                     //$nbTweet = $_POST['nbTweet'];
-                    //$result_type = $_GET['result_type'];
+                    $result_type = $_GET['result_type'];
                     if(empty($nbTweet)){
                         $nbTweet = 100;
                 }
                 //$keywords='hello';
-                $result_type='recent';
+                //$result_type='recent';
                 $tweets = $twitter->get("https://api.twitter.com/1.1/search/tweets.json?q=".$keywords."&result_type=".$result_type."&count=".$nbTweet);
             }
 
