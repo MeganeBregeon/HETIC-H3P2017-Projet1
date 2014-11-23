@@ -28,8 +28,14 @@ var ui = {
 		var col3=document.createElement('div');
 
 		col0.setAttribute('class','colums');
+		col0.setAttribute('id','colums0');
+
 		col1.setAttribute('class','colums');
+		col1.setAttribute('id','colums1');
+
 		col2.setAttribute('class','colums');
+		col2.setAttribute('id','colums2');
+
 		col3.setAttribute('class','colums');
 
 		jstwitter.appendChild(col0);

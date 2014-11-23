@@ -1,7 +1,12 @@
+/* page_content*/
+
+#page_content {
+	background-color: #FAFAFA;
+}
+
 /* jstwitter */
 #jstwitter {
 	position: relative;
-	background-color: #ddd;
 	width: 60.459%;
 	height: 1000px;
 	margin: auto;
@@ -9,9 +14,13 @@
 
 /*colums*/
 .colums {
-	width: 25%;
+	width: 22.41%;
 	float: left;
 	display: block;
+}
+
+#colums0, #colums1, #colums2{
+	margin-right: 3.45%;
 }
 
 
@@ -25,12 +34,13 @@
 	box-shadow:0 0 3px 1px rgba(100,100,100,0.2);						
 	overflow:hidden;
 	background: #fff;
-	margin: 5px;
+	margin-bottom: 30px;
 }
 
 /* Image */	
 .item img {
 	width:100%;
+	margin-bottom: -2px;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-o-transition: all 0.2s linear;
