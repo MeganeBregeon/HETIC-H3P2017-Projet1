@@ -5,7 +5,7 @@ var control={};
 
 document.getElementById('liste_events');
 
-
+//APPEL DU JSON 
 
 model.getJSON('js/events.json', function(data) {
 	// si model.getJSON récup events :
@@ -19,33 +19,17 @@ model.getJSON('js/events.json', function(data) {
   	alert("Désolé, évènements indisponibles pour le moment.");
 });
 
-//––––––––––––––––––––––––––––––––
-/*
-function recup_distance(data){
 
-	model.generate_tableau_coords_events(data, function(tableau_coords_events){			// lorsque le tableau de coords est fait
-		model.getUserLocation(function(userPos){										// on get la position
-			model.calculateDistances(userPos.lat,userPos.lng,tableau_coords_events, function(tableau_distances_events){	// on calcule dist
-				UI.ajoute_distance_events(tableau_distances_events, function(){
-					console.log('distances ajoutées');
-				});
-			});
-		});
-	});
-
-}
-*/
-
+//APPEL DE LA VIDEO A LA UNE
 
 
 function appel_video(data){
 	model.calcul_video_live(data,function(most_recent_video){
 		
 		UI.affiche_video_a_la_une(most_recent_video,function(){
-			console.log('OK = ');	
+			console.log('OK = video récente récupérée ');	
 		});
 	});
 }
-
 
 

@@ -2,6 +2,8 @@
 
 var UI = {
 
+	//Affichage video sur la page live
+
 		affiche_video_a_la_une : function(most_recent_video,callback_video){
 
 			var video_on_play = document.getElementById('video_on_live');
@@ -15,7 +17,7 @@ var UI = {
 
 			//SRC FICHIERS VIDEOS					
 			element_video.setAttribute('src',most_recent_video.video_ogv);						// assigne l'url de l'image
-			element_video.setAttribute('src',most_recent_video.video_mp);						
+			element_video.setAttribute('src',most_recent_video.video_mp);					
 
 			//PLAYER VIDEO
 			element_video.setAttribute('class','video_event');							
@@ -24,15 +26,17 @@ var UI = {
 			element_video.load(); 
 
 
-
 			callback_video.call(this);
 
 		},
 
+	//affichage du player sur la video à la une
 
-		// +','+data.events[i].videomp4
 
 
+
+
+	//affichage events video sur la page live
 
 	affiche_liste_events : function(data,callback_final){
 
