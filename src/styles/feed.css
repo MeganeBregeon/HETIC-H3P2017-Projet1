@@ -133,6 +133,7 @@ form {
 
 /* item*/
 .item {
+	width: 100%;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
@@ -163,8 +164,31 @@ form {
    transform: scale(1.1,1.1);
    background-color: rgba(219,127,8, 0.7);
 }
+/**/
+.content {
+	width: 100%
+}
 
 /* Mask */
+.item .mask {
+position: absolute;
+margin: auto;
+z-index: 2;
+background-color: rgba(219,127,8, 0.7);
+
+/*	padding: 5px 10px;
+min-height: 45px;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+opacity: 0;
+-webkit-transition: opacity 300ms ease;
+-moz-transition: opacity 300ms ease;
+-o-transition: opacity 300ms ease;
+transition: opacity 300ms ease;
+*/
+}
 
 
 /* hover */

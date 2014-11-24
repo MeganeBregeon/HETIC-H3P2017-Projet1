@@ -52,31 +52,80 @@ var ui = {
 		// div .item
 			var div=document.createElement('div');
 			div.classList.add('item');
+			div.setAttribute('id','item_id');
+
+			colums[numcol].appendChild(div);
+
 
 			// div .content
 				var content=document.createElement('div');
 				content.classList.add('content');
 				
 				div.appendChild(content);	
-		
+				
+				// div .mask
+					var mask=document.createElement('div');
+					mask.classList.add('mask');
+					mask.setAttribute('id','mask_id');
+
+					content.appendChild(mask);
+
+						// p .author
+						var author=document.createElement('p');
+						author.setAttribute('class', 'author');
+						mask.appendChild(author);
+
+							// Par (txt)
+							var by=document.createTextNode("Par ");
+							author.appendChild(by);
+
+							// User URL
+							var userlink=document.createElement('a');
+							userlink.setAttribute('target', 'blanck');
+							userlink.setAttribute('href','http://www.twitter.com/mediatweet[i].user.name');
+							userlink.setAttribute('class','userlink');
+
+							author.appendChild(userlink);
+
+								// User Name
+								var text=document.createTextNode(mediatweet[i].user.name);
+								userlink.appendChild(text);	
+
 				// img .img_tweet
 					var img=document.createElement('img');
 					img.setAttribute('src',mediatweet[i].entities.media[0].media_url);
 					img.setAttribute('alt',"img tweet");
+					img.setAttribute('id',"tweet");
 					img.setAttribute('class','img_tweet');
 
-					content.appendChild(img);																								// place l'image dans la div_event
-				
-				// div .mask 
-					var mask=document.createElement('div');
-					mask.setAttribute('class','mask');
+					content.appendChild(img);
 
-					content.appendChild(mask);
+mask.style.height = document.getElementById('tweet').offsetHeight+"px";
+console.log(mask.style.height);
+mask.style.width = document.getElementById('tweet').offsetWidth+"px";
+console.log(mask.style.width);
+
+					// var longeur = document.getElementById("tweet").offsetHeight;
+					// console.log(longeur);
+					
+					// var taille = document.getElementById("tweet").offsetHeight;
+   		// 			// var obj = document.getElementById("mask_id");
+    	// 			mask.style.width = taille;   																			// place l'image dans la div_event
+					// console.log(div.offsetHeight);
+					// console.log(div.css('height'));
+				    // console.log(div.offsetHeight);
+				        
+				    //    document.getElementById('item_id').offsetHeight;
+					
+				        
+
 
 //INSTAGRAM
 		// div .item
 			var divinsta=document.createElement('div');
 			divinsta.classList.add('item');
+
+			colums[numcol].appendChild(divinsta);
 
 			// img .
 			var img_instagram=document.createElement('img');															// crée l'élément html img
@@ -93,16 +142,16 @@ var ui = {
 			// textSpan.classList.add('content'); 																		//content que j'appel en CSS
 			// textSpan.appendChild(text);																						// je mets le texte dans le span
 			// div.appendChild(textSpan);
-			colums[numcol].appendChild(div);
-			colums[numcol].appendChild(divinsta);
 			numcol++;
 
 			if (numcol==4) {
 				numcol=0;
 			}
 			else {}
+
+
 		}
-				
+	
 	}
 }
 
