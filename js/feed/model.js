@@ -8,7 +8,7 @@ var model = {
 		var req = null;
 
 				if (window.XMLHttpRequest){
-		 			req = new XMLHttpRequest();
+					req = new XMLHttpRequest();
 					if (req.overrideMimeType) {
 						req.overrideMimeType('text/json');
 					}
@@ -55,30 +55,32 @@ var model = {
 
 	getINSTAGRAM : function(keywords,mediatweet,callback_instaback){
 
-    	var client_id = '5f889f33af784253a5225251213b4efe';
-
-    	$.ajax({
-	    	url      : 'https://api.instagram.com/v1/tags/'+keywords+'/media/recent?client_id='+client_id,
-		    dataType : 'jsonp',
-		    success  :  function (result) {		    				
-		    				//model.getVINE(keywords,mediatweet,result.data);
-		    				ui.displaysocial(mediatweet,result.data);
-						}
-	    });
-	},
-
-	getVINE : function(keywords,mediatweet,instas){
+		var client_id = '5f889f33af784253a5225251213b4efe';
 
 		$.ajax({
-	    	url      : 'https://api.vineapp.com/timelines/tags/'+keywords,
-		    dataType : 'jsonp',
-		    success  :  function () {
-		    				console.log('ok');    				
-		    				//ui.displaysocial(mediatweet,instas);
-						    //callback_instaback(this, tableau_results);	le callback modifie le tableau !! 
+			url      : 'https://api.instagram.com/v1/tags/'+keywords+'/media/recent?client_id='+client_id,
+			dataType : 'jsonp',
+			success  :  function (result) {		    				
+							callback_instaback.call(this,result.data);
 						}
-	    });	
+		});
+	},
+
+	getVINE : function(keywords){
+
+		var requestVine = $.ajax({
+			type: "GET",
+			url: 'https://api.vineapp.com/timelines/tags/'+keywords,
+			crossDomain: true,
+			dataType : 'json'
+		});	
+
+		requestVine.done =   function (data) {
+				console.log('GET VINE SUCCESS');
+				console.log(data);	
+							
+							//callback_instaback(this, tableau_results);
+			}
 
 	}
 }
-

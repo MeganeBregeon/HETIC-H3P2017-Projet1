@@ -72,7 +72,6 @@ html, body {
 
 #menu a:first-child{
 	background-color:	#FAFAFA;
-
 }
 
 #menu a:last-child{
@@ -110,14 +109,14 @@ html, body {
 	font-weight: 400;
 	border-bottom: 1px solid #08E9A0 ;
 	cursor: pointer;
-
-
 }
 
 
 #filter a:first-child{
 	padding-right: 3%;
-
+	font-weight: 500;
+	color: black;
+	border-bottom:1px solid #08E9A0;
 }
 
 

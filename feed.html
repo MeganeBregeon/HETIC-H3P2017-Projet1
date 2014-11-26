@@ -27,33 +27,36 @@
 	</div>
 
 	<nav id="filter">
-				<a href="" id="see_all">Voir tout</a>
-				<a href="" id="celebrity">Célébrités</a>
-				<a href="" id="creator">Créateurs</a>
+				<a href="" id="see_all" class="filter_selected">Découvrir</a>
+				<a href="" id="celebrities">Célébrités</a>
+				<a href="" id="creators">Créateurs</a>
 				<a href="" id="styles">Styles</a>
 	</nav>
 
 <div id='page_content'>
+
+
+<!--–––––––––––––––––––– FORMULAIRE ––––––––––––––––––––-->
+
 	<form id="formajax" method="GET" action="" >
-	  <p>
+	  
 	  	<select name="result_type" type="button" id="result_type">
-	  		<option value="popular">Populaire</option>
-	  		<option value="recent">Recent</option>
+	  		<option value="recent">Récent</option>
+	  		<option value="popular">Populaire</option>	  		
 	  	</select>
 
 	  	<input type="text" placeholder="Texte Ici" id="key" value="fashion" class="input_text">
-	    <input type="submit" value="&#128269;" class="input_search">
-
-	  </p>
+	    <input type="submit" value="&#128269;" class="input_search" id="submit_input">
+  
 	</form>
-
-<!-- 	<div class="divider"></div>
- -->
-
-
+<!--––––––––––––––––––––––––––––––––––––––––––––––––––––––-->
+<div id="loader"></div>
 
 		<div id="jstwitter">
-
+			<div class="colums" id="col1"></div>
+			<div class="colums" id="col2"></div>
+			<div class="colums" id="col3"></div>
+			<div class="colums" id="col4"></div>
 		</div>
 </div>
 
@@ -70,12 +73,7 @@
 	</footer>
  -->
 
-	<!--–––––––––––––––––––––––––––––––––––
-	<script language="JavaScript">
-	function affiche_result(tweets_recus){
-	console.log(tweets_recus);
-}</script>
-–––––––––––––––––––––––––––––––––––-->
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 <script src="js/feed/model.js"></script>
@@ -85,3 +83,4 @@
 
 </body>
 </html>
+
