@@ -4,7 +4,7 @@
                 "titre" : "CORRIE NIELSEN",
                 "lieu" : "Salons du Louvre",
                 "timestamp" : "1417086000",
-                "image" : "images/createur/corrienielsen.jpg",
+                "image" : "images/createur/corrienielsen.png",
                 "lat" : "48.864082",
                 "lng" : "2.344156",
                 "video_ogv" : "videos/intro.ogv ",
@@ -14,7 +14,7 @@
                 "titre" : "CHRISTINE PHUNG",
                 "lieu" : "Institut du Monde Arabe",
                 "timestamp" : "1417089600",
-                "image" : "images/createur/christinephung.jpg",
+                "image" : "images/createur/christinephung.png",
                 "lat" : "48.848989",
                 "lng" : "2.356586",
                 "video_ogv" : "videos/intro.ogv ",
@@ -23,7 +23,7 @@
                 "titre" : "PASCAL MILLET ",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417096800",
-                "image" : "images/createur/pascalmillet.jpg",
+                "image" : "images/createur/pascalmillet.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
                 "video_ogv" : "videos/intro.ogv ",
@@ -32,7 +32,7 @@
                 "titre" : "ANREALAGE",
                 "lieu" : "Les Beaux Arts de Paris",
                 "timestamp" : "1417104000",
-                "image" : "images/createur/anrealage.jpg",
+                "image" : "images/createur/anrealage.png",
                 "lat" : "48.858164",
                 "lng" : "2.334424",
                  "video_ogv" : "videos/intro.ogv ",
@@ -42,7 +42,7 @@
                 "titre" : "JACQUEMUS",
                 "lieu" : "Cité de la Mode et du Design",
                 "timestamp" : "1417111200",
-                "image" : "images/createur/jacquemus.jpg",
+                "image" : "images/createur/jacquemus.png",
                 "lat" : "48.840847 ",
                 "lng" : "2.36965",
                  "video_ogv" : "videos/intro.ogv ",
@@ -52,7 +52,7 @@
                 "titre" : "CHRISTOPHE LEMAIRE",
                 "lieu" : "Bibliothèque nationale de France",
                 "timestamp" : "1417165200",
-                "image" : "images/createur/christophelemaire.jpg",
+                "image" : "images/createur/christophelemaire.png",
                 "lat" : "48.833903",
                 "lng" : "2.377615",
                  "video_ogv" : "videos/intro.ogv ",
@@ -62,7 +62,7 @@
                 "titre" : "GUY LAROCHE",
                 "lieu" : "Grand Palais, Galerie Sud-Est",
                 "timestamp" : "1417172400",
-                "image" : "images/createur/guylaroche.jpg",
+                "image" : "images/createur/guylaroche.png",
                 "lat" : "48.865895 ",
                 "lng" : "2.313805"
             },
@@ -70,7 +70,7 @@
                 "titre" : "DAMIR DOMA",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417179600",
-                "image" : "images/createur/damirdoma.jpg",
+                "image" : "images/createur/damirdoma.png",
                 "lat" : "48.864804 ",
                 "lng" : "2.296514"
             },
@@ -78,7 +78,7 @@
                 "titre" : "ALEXIS MABILLE",
                 "lieu" : "Hôtel Salomon de Rothschild",
                 "timestamp" : "1417186800",
-                "image" : "images/createur/alexismabille.jpg",
+                "image" : "images/createur/alexismabille.png",
                 "lat" : "48.875391",
                 "lng" : "2.30369"
             },
@@ -86,7 +86,7 @@
                 "titre" : "AGANOVICH",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417194000",
-                "image" : "images/createur/aganovich.jpg",
+                "image" : "images/createur/aganovich.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514"
             },
@@ -94,7 +94,7 @@
                 "titre" : "ROLAND MOURET",
                 "lieu" : "Palais des Beaux Arts",
                 "timestamp" : "1417251600",
-                "image" : "images/createur/rolandmouret.jpg",
+                "image" : "images/createur/rolandmouret.png",
                 "lat" : "48.857966",
                 "lng" : "2.334492"
             },
@@ -102,7 +102,7 @@
                 "titre" : "CARVEN",
                 "lieu" : "Grand Palais",
                 "timestamp" : "1417255200",
-                "image" : "images/createur/carven.jpg",
+                "image" : "images/createur/carven.png",
                 "lat" : "48.866578 ",
                 "lng" : "2.311635"
             },
@@ -110,7 +110,7 @@
                 "titre" : "ANN DEMEULEMEESTER",
                 "lieu" : "Couvent des Cordeliers",
                 "timestamp" : "1417262400",
-                "image" : "images/createur/anndemeulemeester.jpg",
+                "image" : "images/createur/anndemeulemeester.png",
                 "lat" : "48.850953",
                 "lng" : "2.341013"
             },
@@ -118,7 +118,7 @@
                 "titre" : "BALMAIN",
                 "lieu" : "Grand Hôtel de Paris",
                 "timestamp" : "1417269600",
-                "image" : "images/createur/balmain.jpg",
+                "image" : "images/createur/balmain.png",
                 "lat" : "48.870781",
                 "lng" : "2.3303"
             },
@@ -126,7 +126,7 @@
                 "titre" : "BARBARA BUI",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417273200",
-                "image" : "images/createur/barbarabui.jpg",
+                "image" : "images/createur/barbarabui.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514"
             },
@@ -134,7 +134,7 @@
                 "titre" : "NINA RICCI",
                 "lieu" : "Espace Éphémère Tuileries",
                 "timestamp" : "1417276800",
-                "image" : "images/createur/ninaricci.jpg",
+                "image" : "images/createur/ninaricci.png",
                 "lat" : "48.863492",
                 "lng" : "2.327494"
             },
@@ -142,7 +142,7 @@
                 "titre" : "LANVIN",
                 "lieu" : "Beaux Arts de Paris",
                 "timestamp" : "1417287600",
-                "image" : "images/createur/lanvin.jpg",
+                "image" : "images/createur/lanvin.png",
                 "lat" : "48.856601",
                 "lng" : "2.33459"
             },
@@ -150,7 +150,7 @@
                 "titre" : "IRIS VAN HERPEN",
                 "lieu" : "Centre Georges Pompidou",
                 "timestamp" : "1417707000",
-                "image" : "images/createur/irisvanherpen.jpg",
+                "image" : "images/createur/irisvanherpen.png",
                 "lat" : "48.860642",
                 "lng" : "2.351675"
             },
@@ -158,7 +158,7 @@
                 "titre" : "PAUL & JOE",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417714200",
-                "image" : "images/createur/paul_joe.jpg",
+                "image" : "images/createur/paul_joe.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514"
             },
@@ -166,7 +166,7 @@
                 "titre" : "ALEXANDER MCQUEEN",
                 "lieu" : "Garde Républicaine",
                 "timestamp" : "1417717800",
-                "image" : "images/createur/alexandermcqueen.jpg",
+                "image" : "images/createur/alexandermcqueen.png",
                 "lat" : "48.851408",
                 "lng" : "2.363857"
             },
@@ -174,7 +174,7 @@
                 "titre" : "LOUIS VUITTON",
                 "lieu" : "Fondation Louis Vuitton",
                 "timestamp" : "1417770000",
-                "image" : "images/createur/louisvuitton.jpg",
+                "image" : "images/createur/louisvuitton.png",
                 "lat" : "48.876659",
                 "lng" : "2.263353"
             },
@@ -182,7 +182,7 @@
                 "titre" : "ALLUDE",
                 "lieu" : "Grand Palais",
                 "timestamp" : "1417780800",
-                "image" : "images/createur/allude.jpg",
+                "image" : "images/createur/allude.png",
                 "lat" : "48.866578",
                 "lng" : "2.311635"
             },
@@ -190,7 +190,7 @@
                 "titre" : "MIU MIU",
                 "lieu" : "Palais de Iéna",
                 "timestamp" : "1417784400",
-                "image" : "images/createur/miumiu.jpg",
+                "image" : "images/createur/miumiu.png",
                 "lat" : "48.8648117",
                 "lng" : "2.293549"
             },
@@ -198,7 +198,7 @@
                 "titre" : "HERMES",
                 "lieu" : "Orangerie, Jardin du Luxembourg ",
                 "timestamp" : "1417791600",
-                "image" : "images/createur/hermes.jpg",
+                "image" : "images/createur/hermes.png",
                 "lat" : "48.848754",
                 "lng" : "2.333988"
             },
@@ -206,7 +206,7 @@
                 "titre" : "KENZO",
                 "lieu" : "Voir sur invitation",
                 "timestamp" : "1417510800",
-                "image" : "images/createur/kenzo.jpg",
+                "image" : "images/createur/kenzo.png",
                 "lat" : "48.898785",
                 "lng" : "2.361284"
             }
