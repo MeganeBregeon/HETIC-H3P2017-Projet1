@@ -12,6 +12,7 @@ var UI = {
 			var element_video = document.createElement('video');
 			element_video.classList.add('livestream');
 			video_on_play.appendChild(element_video);
+			element_video.setAttribute('id','video');					
 
 
 
@@ -19,18 +20,17 @@ var UI = {
 			element_video.setAttribute('src',most_recent_video.video_ogv);						// assigne l'url de l'image
 			element_video.setAttribute('src',most_recent_video.video_mp);					
 
-			//PLAYER VIDEO
-			element_video.setAttribute('class','video_event');							
-			// assigne la classe video_event
-			element_video.autoplay = true;
-			element_video.load(); 
+			// //PLAYER VIDEO
+			// element_video.setAttribute('class','video_event');							
+			// // assigne la classe video_event
+			// element_video.autoplay = true;
+			// element_video.load(); 
+			
 
 
-			callback_video.call(this);
+			// callback_video.call(this);
 
 		},
-
-	//affichage du player sur la video à la une
 
 
 

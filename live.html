@@ -14,7 +14,7 @@
 
 <body>
 
-
+<!--____________ MENU  _______________-->
 
 	<div class="navi">
 
@@ -25,16 +25,18 @@
 		</div>
 
 		<nav id="menu">
-
-			<a href="feed.html">Actualités</a>
-			<a href="live.html">Live</a>
-
+			<ul>
+				<li ><a href="feed.html" >Social Board</a></li>
+				<li id="current"><a href="live.html" >Replay</a></li>
+			</ul>
 		</nav>
 
 
 	</div>
 
-		
+<!--____________ PLAYER BUTTONS & VIDEO CONTENT _______________-->
+
+
 
 	<div class="live">
 
@@ -52,11 +54,16 @@
 	    <span class="buffer"></span>
  		 </div>
 
+
+
+
+<!--____________ EVENTS LIST _______________-->
+
 		<div id="liste_live"></div>
 		
 	</div>
 
-
+<!--____________ FOOTER _______________-->
 
 	<footer>
 		<ul>
@@ -68,7 +75,8 @@
 		</ul>
 	</footer>
 
-										<!-- SCRIPT -->
+
+<!--–––––––––––––––––––– SCRIPTS ––––––––––––––––––––-->
    <script type="text/javascript" src="js/model.js"></script>
    <script type="text/javascript" src="js/UI.js"></script>
    <script type="text/javascript" src="js/control.js"></script>

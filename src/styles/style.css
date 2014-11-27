@@ -16,11 +16,12 @@ html, body {
 .navi{
 
 	width: 100%;
-	height: 120px;
+	height: 90px;
 	border-bottom: 3px solid #F7F7F7;
 	background-color: #fff;
 
 }
+
 
 #logo{
 	width: 18%;
@@ -35,6 +36,7 @@ html, body {
 	width:100%;
 	height: 100%;
 }
+
 
 .navi h2{
 	font-size: 50px;
@@ -53,43 +55,55 @@ html, body {
 	
 }
 
-#menu{
+/********* MENU  RIGHT *******/
+
+
+#menu ul {
+	display: block;
+}
+#menu ul li{
 	display: inline-block;
-	margin-left: 70%;
-	margin-top:3.2%;
+	margin-top: 30px;
+
+	
 }
 
+#menu ul li :last-child{
+	margin-left: -5px;
+	padding: 5px 10px;
+
+}
+
+
+#menu {
+	margin-left: 78%;
+}
 
 
 #menu a { 
 	font-family: 'Open Sans', sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	text-decoration: none; 
 	color: #000000;
-	padding: 10px;
-	
-}
+	background-color:#F6F6F6;
 
-#menu a:first-child{
-	background-color:	#FAFAFA;
 }
-
-#menu a:last-child{
-	background-color:	#F6F6F6;
-}
-
 
 #menu a:hover { color: #2377BA; }
 
+
+#current a{
+	color: #2377BA;
+}
 
 
 
 			/**** FILTER ****/
 
+
 #filter{
 	text-align: center;
 	background-color: #FAFAFA;
-
 }
 
 #filter a{
@@ -102,6 +116,12 @@ html, body {
 	margin-top: 20px;
 	border-bottom: 1px solid #EDE9E9 ;
 	padding: 1% 3%;
+	-webkit-transition: border-bottom 1s;
+  -moz-transition: border-bottom .25s;
+  -ms-transition: border-bottom .25s ;
+  -o-transition: border-bottom .25s ;
+  transition: border 1s FadeIn ;
+
 
 }
 
@@ -109,6 +129,7 @@ html, body {
 	font-weight: 400;
 	border-bottom: 1px solid #08E9A0 ;
 	cursor: pointer;
+
 }
 
 
@@ -118,6 +139,9 @@ html, body {
 	color: black;
 	border-bottom:1px solid #08E9A0;
 }
+
+
+/* ♥ Anim css3 filter ♥ */
 
 
 

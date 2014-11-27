@@ -7,8 +7,9 @@
                 "image" : "images/createur/corrienielsen.png",
                 "lat" : "48.864082",
                 "lng" : "2.344156",
-                "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "
+                "video_ogv" : "videos/ogg/1.ogg ",
+                "video_mp" : "videos/mp4/1.mp4 ",
+                "video_webm" : "videos/webm/1.webm "
             },
             {
                 "titre" : "CHRISTINE PHUNG",
@@ -17,8 +18,9 @@
                 "image" : "images/createur/christinephung.png",
                 "lat" : "48.848989",
                 "lng" : "2.356586",
-                "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "            },
+                "video_ogv" : "videos/ogg/2.ogg ",
+                "video_mp" : "videos/mp4/2.mp4 ",
+                "video_webm" : "videos/webm/2.webm "        },
             {
                 "titre" : "PASCAL MILLET ",
                 "lieu" : "Palais de Tokyo",
@@ -26,8 +28,9 @@
                 "image" : "images/createur/pascalmillet.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
-                "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "            },
+                "video_ogv" : "videos/ogg/3.ogg ",
+                "video_mp" : "videos/mp4/3.mp4 ",
+                "video_webm" : "videos/webm/3.webm "           },
             {
                 "titre" : "ANREALAGE",
                 "lieu" : "Les Beaux Arts de Paris",
@@ -35,8 +38,9 @@
                 "image" : "images/createur/anrealage.png",
                 "lat" : "48.858164",
                 "lng" : "2.334424",
-                 "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "
+                 "video_ogv" : "videos/ogg/4.ogg ",
+                "video_mp" : "videos/mp4/4.mp4 ",
+                "video_webm" : "videos/webm/4.webm "
             },
             {
                 "titre" : "JACQUEMUS",
@@ -45,8 +49,9 @@
                 "image" : "images/createur/jacquemus.png",
                 "lat" : "48.840847 ",
                 "lng" : "2.36965",
-                 "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "
+                 "video_ogv" : "videos/ogg/5.ogg ",
+                "video_mp" : "videos/mp4/5.mp4 ",
+                "video_webm" : "videos/webm/5.webm "
             },
             {
                 "titre" : "CHRISTOPHE LEMAIRE",
@@ -55,8 +60,9 @@
                 "image" : "images/createur/christophelemaire.png",
                 "lat" : "48.833903",
                 "lng" : "2.377615",
-                 "video_ogv" : "videos/intro.ogv ",
-                "video_mp" : "videos/intro.mp4 "
+                 "video_ogv" : "videos/ogg/6.ogg ",
+                "video_mp" : "videos/mp4/7.mp4 ",
+                "video_webm" : "videos/webm/7.webm "
             },
             {
                 "titre" : "GUY LAROCHE",
@@ -64,7 +70,10 @@
                 "timestamp" : "1417172400",
                 "image" : "images/createur/guylaroche.png",
                 "lat" : "48.865895 ",
-                "lng" : "2.313805"
+                "lng" : "2.313805",
+                "video_ogv" : "videos/ogg/8.ogg ",
+                "video_mp" : "videos/mp4/8.mp4 ",
+                "video_webm" : "videos/webm/8.webm "
             },
             {
                 "titre" : "DAMIR DOMA",
@@ -72,7 +81,10 @@
                 "timestamp" : "1417179600",
                 "image" : "images/createur/damirdoma.png",
                 "lat" : "48.864804 ",
-                "lng" : "2.296514"
+                "lng" : "2.296514",
+                "video_ogv" : "videos/ogg/9.ogg ",
+                "video_mp" : "videos/mp4/9.mp4 ",
+                "video_webm" : "videos/webm/9.webm "
             },
             {
                 "titre" : "ALEXIS MABILLE",
@@ -80,7 +92,10 @@
                 "timestamp" : "1417186800",
                 "image" : "images/createur/alexismabille.png",
                 "lat" : "48.875391",
-                "lng" : "2.30369"
+                "lng" : "2.30369",
+                "video_ogv" : "videos/ogg/10.ogg ",
+                "video_mp" : "videos/mp4/10.mp4 ",
+                "video_webm" : "videos/webm/10.webm "
             },
             {
                 "titre" : "AGANOVICH",
@@ -88,7 +103,10 @@
                 "timestamp" : "1417194000",
                 "image" : "images/createur/aganovich.png",
                 "lat" : "48.864804",
-                "lng" : "2.296514"
+                "lng" : "2.296514",
+                "video_ogv" : "videos/ogg/11.ogg ",
+                "video_mp" : "videos/mp4/11.mp4 ",
+                "video_webm" : "videos/webm/11.webm "
             },
             {
                 "titre" : "ROLAND MOURET",
@@ -96,7 +114,10 @@
                 "timestamp" : "1417251600",
                 "image" : "images/createur/rolandmouret.png",
                 "lat" : "48.857966",
-                "lng" : "2.334492"
+                "lng" : "2.334492",
+                "video_ogv" : "videos/ogg/12.ogg ",
+                "video_mp" : "videos/mp4/12.mp4 ",
+                "video_webm" : "videos/webm/12.webm "
             },
             {
                 "titre" : "CARVEN",
@@ -104,7 +125,10 @@
                 "timestamp" : "1417255200",
                 "image" : "images/createur/carven.png",
                 "lat" : "48.866578 ",
-                "lng" : "2.311635"
+                "lng" : "2.311635",
+                "video_ogv" : "videos/ogg/13.ogg ",
+                "video_mp" : "videos/mp4/13.mp4 ",
+                "video_webm" : "videos/webm/13.webm "
             },
             {
                 "titre" : "ANN DEMEULEMEESTER",
@@ -112,7 +136,10 @@
                 "timestamp" : "1417262400",
                 "image" : "images/createur/anndemeulemeester.png",
                 "lat" : "48.850953",
-                "lng" : "2.341013"
+                "lng" : "2.341013",
+                "video_ogv" : "videos/ogg/14.ogg ",
+                "video_mp" : "videos/mp4/14.mp4 ",
+                "video_webm" : "videos/webm/14.webm "
             },
             {
                 "titre" : "BALMAIN",
@@ -120,7 +147,10 @@
                 "timestamp" : "1417269600",
                 "image" : "images/createur/balmain.png",
                 "lat" : "48.870781",
-                "lng" : "2.3303"
+                "lng" : "2.3303",
+                "video_ogv" : "videos/ogg/15.ogg ",
+                "video_mp" : "videos/mp4/15.mp4 ",
+                "video_webm" : "videos/webm/15.webm "
             },
             {
                 "titre" : "BARBARA BUI",
@@ -128,7 +158,10 @@
                 "timestamp" : "1417273200",
                 "image" : "images/createur/barbarabui.png",
                 "lat" : "48.864804",
-                "lng" : "2.296514"
+                "lng" : "2.296514",
+                "video_ogv" : "videos/ogg/16.ogg ",
+                "video_mp" : "videos/mp4/16.mp4 ",
+                "video_webm" : "videos/webm/16.webm "
             },
             {
                 "titre" : "NINA RICCI",
@@ -136,7 +169,10 @@
                 "timestamp" : "1417276800",
                 "image" : "images/createur/ninaricci.png",
                 "lat" : "48.863492",
-                "lng" : "2.327494"
+                "lng" : "2.327494",
+                "video_ogv" : "videos/ogg/17.ogg ",
+                "video_mp" : "videos/mp4/17.mp4 ",
+                "video_webm" : "videos/webm/17.webm "
             },
             {
                 "titre" : "LANVIN",
@@ -144,7 +180,10 @@
                 "timestamp" : "1417287600",
                 "image" : "images/createur/lanvin.png",
                 "lat" : "48.856601",
-                "lng" : "2.33459"
+                "lng" : "2.33459",
+                "video_ogv" : "videos/ogg/18.ogg ",
+                "video_mp" : "videos/mp4/18.mp4 ",
+                "video_webm" : "videos/webm/18.webm "
             },
             {
                 "titre" : "IRIS VAN HERPEN",
@@ -152,7 +191,10 @@
                 "timestamp" : "1417707000",
                 "image" : "images/createur/irisvanherpen.png",
                 "lat" : "48.860642",
-                "lng" : "2.351675"
+                "lng" : "2.351675",
+                "video_ogv" : "videos/ogg/19.ogg ",
+                "video_mp" : "videos/mp4/19.mp4 ",
+                "video_webm" : "videos/webm/19.webm "
             },
             {
                 "titre" : "PAUL & JOE",
@@ -160,7 +202,10 @@
                 "timestamp" : "1417714200",
                 "image" : "images/createur/paul_joe.png",
                 "lat" : "48.864804",
-                "lng" : "2.296514"
+                "lng" : "2.296514",
+                "video_ogv" : "videos/ogg/20.ogg ",
+                "video_mp" : "videos/mp4/20.mp4 ",
+                "video_webm" : "videos/webm/20.webm "
             },
             {
                 "titre" : "ALEXANDER MCQUEEN",
@@ -168,7 +213,10 @@
                 "timestamp" : "1417717800",
                 "image" : "images/createur/alexandermcqueen.png",
                 "lat" : "48.851408",
-                "lng" : "2.363857"
+                "lng" : "2.363857",
+                "video_ogv" : "videos/ogg/21.ogg ",
+                "video_mp" : "videos/mp4/21.mp4 ",
+                "video_webm" : "videos/webm/21.webm "
             },
             {
                 "titre" : "LOUIS VUITTON",
@@ -176,7 +224,10 @@
                 "timestamp" : "1417770000",
                 "image" : "images/createur/louisvuitton.png",
                 "lat" : "48.876659",
-                "lng" : "2.263353"
+                "lng" : "2.263353",
+                "video_ogv" : "videos/ogg/22.ogg ",
+                "video_mp" : "videos/mp4/22.mp4 ",
+                "video_webm" : "videos/webm/22.webm "
             },
             {
                 "titre" : "ALLUDE",
@@ -184,7 +235,10 @@
                 "timestamp" : "1417780800",
                 "image" : "images/createur/allude.png",
                 "lat" : "48.866578",
-                "lng" : "2.311635"
+                "lng" : "2.311635",
+                "video_ogv" : "videos/ogg/23.ogg ",
+                "video_mp" : "videos/mp4/23.mp4 ",
+                "video_webm" : "videos/webm/23.webm "
             },
             {
                 "titre" : "MIU MIU",
@@ -192,7 +246,10 @@
                 "timestamp" : "1417784400",
                 "image" : "images/createur/miumiu.png",
                 "lat" : "48.8648117",
-                "lng" : "2.293549"
+                "lng" : "2.293549",
+                "video_ogv" : "videos/ogg/24.ogg ",
+                "video_mp" : "videos/mp4/24.mp4 ",
+                "video_webm" : "videos/webm/24.webm "
             },
             {
                 "titre" : "HERMES",
@@ -200,7 +257,10 @@
                 "timestamp" : "1417791600",
                 "image" : "images/createur/hermes.png",
                 "lat" : "48.848754",
-                "lng" : "2.333988"
+                "lng" : "2.333988",
+                "video_ogv" : "videos/ogg/25.ogg ",
+                "video_mp" : "videos/mp4/25.mp4 ",
+                "video_webm" : "videos/webm/25.webm "
             },
             {
                 "titre" : "KENZO",
@@ -208,7 +268,10 @@
                 "timestamp" : "1417510800",
                 "image" : "images/createur/kenzo.png",
                 "lat" : "48.898785",
-                "lng" : "2.361284"
+                "lng" : "2.361284",
+                "video_ogv" : "videos/ogg/26.ogg ",
+                "video_mp" : "videos/mp4/26.mp4 ",
+                "video_webm" : "videos/webm/26.webm "
             }
         ]
 }
