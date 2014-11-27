@@ -1,5 +1,13 @@
-/* page_content*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon/icomoon.eot');
+  src: url('../fonts/icomoon/icomoon.woff') format('woff'),
+       url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+/* page_content*/
 #page_content {
 	background-color: #FAFAFA;
 	padding-top: 30px;
@@ -127,9 +135,9 @@ form {
 #jstwitter {
 	position: relative;
 	width: 60.459%;
-
 	margin: auto;
 	margin-top: 30px;
+	min-height: 100%
 }
 
 /*colums*/
@@ -142,7 +150,6 @@ form {
 #col1, #col2, #col3{
 	margin-right: 3.45%;
 }
-
 
 /* item*/
 .item {
@@ -177,10 +184,14 @@ form {
    transform: scale(1.1,1.1);
    background-color: rgba(219,127,8, 0.7);
 }
-/**/
+
+/*Content*/
 .content {
 	width: 100%;
 	position: relative;
+	overflow: hidden;
+	top: 0;
+	left: 0;
 }
 
 /* Mask */
@@ -188,28 +199,58 @@ form {
 	position: absolute;
 	margin: auto;
 	z-index: 2;
-	background-color: rgba(219,127,8, 0.7);
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+ 	background-color: rgba(35,119,186, 0.7);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+ }
 
-/*	padding: 5px 10px;
-min-height: 45px;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-opacity: 0;
--webkit-transition: opacity 300ms ease;
--moz-transition: opacity 300ms ease;
--o-transition: opacity 300ms ease;
-transition: opacity 300ms ease;
-*/
+ #mask_id {
+ 	background-color: rgba(8,233,160, 0.7);
+ }
+
+.item:hover .mask {
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1;
 }
 
+.author{
+	bottom: 0;
+	position: absolute;
+	padding: 5px;
+	font-family: "open sans";
+	font-weight: 300;
+	color: white;
+}
 
-/* hover */
+.author a {
+	text-decoration: none;
+	color: white;
+}
 
+.count {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 5px;
+}
 
+.count .icon {
+	font-family: "icomoon";
+}
+
+/**/
 .filter_selected{
 	border-bottom:1px solid #08E9A0 ;
 }

@@ -55,7 +55,6 @@ var ui = {
 				// div .mask
 					var mask=document.createElement('div');
 					mask.classList.add('mask');
-					mask.setAttribute('id','mask_id');
 
 					content.appendChild(mask);
 
@@ -79,7 +78,38 @@ var ui = {
 								// User Name
 								var text=document.createTextNode(mediatweet[i].user.name);
 								userlink.appendChild(text);
-								userlink.appendChild(text);
+
+						//p .count
+						var count=document.createElement('p');
+						count.setAttribute('class', 'count');
+						mask.appendChild(count);
+
+							// span .retweet
+							var iconretweet = document.createElement('span');
+							iconretweet.setAttribute('class', 'icon');
+							count.appendChild(iconretweet);
+								
+								// icone Retweet
+								var texticonretweet=document.createTextNode('R');
+								iconretweet.appendChild(texticonretweet);
+
+							//
+							var retweet=document.createTextNode(mediatweet[i].retweet_count);
+							count.appendChild(retweet);
+
+							//span .favorite
+							var iconfavorite = document.createElement('span');
+							iconfavorite.setAttribute('class', 'icon');
+							count.appendChild(iconfavorite);
+
+								// icone favorite
+								var texticonfavorite=document.createTextNode('F');
+								iconfavorite.appendChild(texticonfavorite);
+
+							//p
+							var favorite=document.createTextNode(mediatweet[i].favorite_count);
+							count.appendChild(favorite);
+
 
 				// img .img_tweet
 					var img=document.createElement('img');
@@ -97,21 +127,83 @@ var ui = {
 			var divinsta=document.createElement('div');
 			divinsta.classList.add('item');
 
+			//div .content
+			var contentinsta=document.createElement('div');
+			contentinsta.classList.add('content');	
+			divinsta.appendChild(contentinsta);
+
+				// div .mask
+				var mask=document.createElement('div');
+				mask.classList.add('mask');
+				mask.setAttribute('id','mask_id');
+
+				contentinsta.appendChild(mask);
+					
+					// p .author
+					var author=document.createElement('p');
+					author.setAttribute('class', 'author');
+					mask.appendChild(author);
+
+					// Par (txt)
+						var by=document.createTextNode("Par ");
+						author.appendChild(by);
+
+						// User URL
+						var userlink=document.createElement('a');
+						userlink.setAttribute('target', 'blanck');
+						userlink.setAttribute('href','http://instagram.com/'+instas[i].user.username);
+						userlink.setAttribute('class','userlink');
+
+						author.appendChild(userlink);
+
+						// User Name
+						var text=document.createTextNode(instas[i].user.username);
+						userlink.appendChild(text);
+
+					//p .count
+					var count=document.createElement('p');
+					count.setAttribute('class', 'count');
+					mask.appendChild(count);
+
+						// span .icon
+						var icon = document.createElement('span');
+						icon.setAttribute('class', 'icon');
+						count.appendChild(icon);
+							
+							// icone Like
+							var icon_like=document.createTextNode('L');
+							icon.appendChild(icon_like);
+
+						//
+						var like=document.createTextNode(instas[i].likes.count);
+						count.appendChild(like);
+
+						//span .icon
+						var icon = document.createElement('span');
+						icon.setAttribute('class', 'icon');
+						count.appendChild(icon);
+
+							// icone comment
+							var icon_comment=document.createTextNode('C');
+							icon.appendChild(icon_comment);
+
+						//
+						var comment=document.createTextNode(instas[i].comments.count);
+						count.appendChild(icon_comment);
+
+
 			// img .img_instagram
 			var img_instagram=document.createElement('img');															// crée l'élément html img
 			img_instagram.setAttribute('src',instas[i].images.standard_resolution.url);	// assigne l'url de l'image
 			img_instagram.setAttribute('alt',"img_instagram");															// assigne le texte alternatif
 			img_instagram.setAttribute('class','img_instagram');														// assigne la classe image_event
 			
-			divinsta.appendChild(img_instagram);				
+			contentinsta.appendChild(img_instagram);				
 
+//je fais le count
+		//comments.count
+		//likes.count
 
-		// Text :
-			// var text=document.createTextNode(mediatweet[i].text); 								// j'appel le contenu
-			// var textSpan=document.createElement('span'); 													//je cree l'élement html ou je vais inclure le contenu
-			// textSpan.classList.add('content'); 																		//content que j'appel en CSS
-			// textSpan.appendChild(text);																						// je mets le texte dans le span
-			// div.appendChild(textSpan);
 			columns[numcol].appendChild(div);
 			columns[numcol].appendChild(divinsta);
 			numcol++;
@@ -243,7 +335,33 @@ var ui = {
 
 						form.appendChild(liste_imposee);
 
-						var celebrities=["AngelinaJolie","ScarlettJohansson","MilaKunis","EvaLongoria"];
+						var celebrities=["AngelinaJolie","ScarlettJohansson","MilaKunis","EvaLongoria",
+						"Anna Mouglalis",
+"Catherine Deneuve",
+"Cécile Cassel",
+"Claudia Schiffer",
+"Courtney Love",
+"Dita Von Teese",
+"Emma De Caunes",
+"Janet Jackson",
+"Julie Depardieu",
+"Justin Timberlake",
+"Kanye West",
+"Kate Moss",
+"Keira Knightley",
+"Kim Kardashian",
+"Lenny Kravit",
+"Lily Allen",
+"Micky Green",
+"Milla Jovovich", 
+"Nathalie Baye",
+"Orlando Bloom",
+"RachidaBrakni ",
+"SalmaHayek",
+"VanessaParadis",
+"VirginieEfira",
+"VirginieLedoyen"
+];
 
 						for (var i=0;i<celebrities.length;i++){
 							var cel=document.createElement('option');
@@ -261,7 +379,7 @@ var ui = {
 
 						form.appendChild(liste_imposee);
 
-						var creators=["Dior","Gucci","Givenchy","Guess"];
+						var creators=["Jacquemus","Carven","IsabelMarant","AndrewGn","AcneStudios","Jean-PaulGaultier","LeonardParis","ElieSaab","IrisVanHerpen","RahulMishra","Anrealage","Aganovich","ChristinePhung","CorrieNielsen"];
 
 						for (var i=0;i<creators.length;i++){
 							var crea=document.createElement('option');
