@@ -199,6 +199,14 @@ margin: 4% 5% 0% 1.5%;
 	margin-top: 6.4%;
 }
 
+#social a{
+	color: black;
+}
+
+#social a:hover{
+	color: #2377BA;
+}
+
 #social ul li{
 	padding-top: 6px;
 }
