@@ -5,6 +5,7 @@
                 "lieu" : "Salons du Louvre",
                 "timestamp" : "1417086000",
                 "image" : "images/createur/corrienielsen.png",
+                "defile" : "images/defile/1.jpg",
                 "lat" : "48.864082",
                 "lng" : "2.344156",
                 "video_ogv" : "videos/ogg/1.ogg ",
@@ -16,6 +17,7 @@
                 "lieu" : "Institut du Monde Arabe",
                 "timestamp" : "1417089600",
                 "image" : "images/createur/christinephung.png",
+                "defile" : "images/defile/2.jpg",
                 "lat" : "48.848989",
                 "lng" : "2.356586",
                 "video_ogv" : "videos/ogg/2.ogg ",
@@ -26,6 +28,7 @@
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417096800",
                 "image" : "images/createur/pascalmillet.png",
+                "defile" : "images/defile/3.jpg",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
                 "video_ogv" : "videos/ogg/3.ogg ",
@@ -36,6 +39,7 @@
                 "lieu" : "Les Beaux Arts de Paris",
                 "timestamp" : "1417104000",
                 "image" : "images/createur/anrealage.png",
+                "defile" : "images/defile/4.jpg",
                 "lat" : "48.858164",
                 "lng" : "2.334424",
                  "video_ogv" : "videos/ogg/4.ogg ",
@@ -47,6 +51,7 @@
                 "lieu" : "Cité de la Mode et du Design",
                 "timestamp" : "1417111200",
                 "image" : "images/createur/jacquemus.png",
+                "defile" : "images/defile/5.jpg",
                 "lat" : "48.840847 ",
                 "lng" : "2.36965",
                  "video_ogv" : "videos/ogg/5.ogg ",
@@ -55,223 +60,243 @@
             },
             {
                 "titre" : "CHRISTOPHE LEMAIRE",
-                "lieu" : "Bibliothèque nationale de France",
+                "lieu" : " Biblio. nationale de France",
                 "timestamp" : "1417165200",
                 "image" : "images/createur/christophelemaire.png",
+                "defile" : "images/defile/6.jpg",
                 "lat" : "48.833903",
                 "lng" : "2.377615",
                  "video_ogv" : "videos/ogg/6.ogg ",
-                "video_mp" : "videos/mp4/7.mp4 ",
-                "video_webm" : "videos/webm/7.webm "
+                "video_mp" : "videos/mp4/6.mp4 ",
+                "video_webm" : "videos/webm/6.webm "
             },
             {
                 "titre" : "GUY LAROCHE",
                 "lieu" : "Grand Palais, Galerie Sud-Est",
                 "timestamp" : "1417172400",
                 "image" : "images/createur/guylaroche.png",
+                "defile" : "images/defile/7.jpg",
                 "lat" : "48.865895 ",
                 "lng" : "2.313805",
-                "video_ogv" : "videos/ogg/8.ogg ",
-                "video_mp" : "videos/mp4/8.mp4 ",
-                "video_webm" : "videos/webm/8.webm "
+                "video_ogv" : "videos/ogg/7.ogg ",
+                "video_mp" : "videos/mp4/7.mp4 ",
+                "video_webm" : "videos/webm/7.webm "
             },
             {
                 "titre" : "DAMIR DOMA",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417179600",
                 "image" : "images/createur/damirdoma.png",
+                "defile" : "images/defile/8.jpg",
                 "lat" : "48.864804 ",
                 "lng" : "2.296514",
-                "video_ogv" : "videos/ogg/9.ogg ",
-                "video_mp" : "videos/mp4/9.mp4 ",
-                "video_webm" : "videos/webm/9.webm "
+                "video_ogv" : "videos/ogg/8.ogg ",
+                "video_mp" : "videos/mp4/8.mp4 ",
+                "video_webm" : "videos/webm/8.webm "
             },
             {
                 "titre" : "ALEXIS MABILLE",
                 "lieu" : "Hôtel Salomon de Rothschild",
                 "timestamp" : "1417186800",
                 "image" : "images/createur/alexismabille.png",
+                "defile" : "images/defile/9.jpg",
                 "lat" : "48.875391",
                 "lng" : "2.30369",
-                "video_ogv" : "videos/ogg/10.ogg ",
-                "video_mp" : "videos/mp4/10.mp4 ",
-                "video_webm" : "videos/webm/10.webm "
+                "video_ogv" : "videos/ogg/9.ogg ",
+                "video_mp" : "videos/mp4/9.mp4 ",
+                "video_webm" : "videos/webm/9.webm "
             },
             {
                 "titre" : "AGANOVICH",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417194000",
                 "image" : "images/createur/aganovich.png",
+                "defile" : "images/defile/10.jpg",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
-                "video_ogv" : "videos/ogg/11.ogg ",
-                "video_mp" : "videos/mp4/11.mp4 ",
-                "video_webm" : "videos/webm/11.webm "
+                "video_ogv" : "videos/ogg/10.ogg ",
+                "video_mp" : "videos/mp4/10.mp4 ",
+                "video_webm" : "videos/webm/10.webm "
             },
             {
                 "titre" : "ROLAND MOURET",
                 "lieu" : "Palais des Beaux Arts",
                 "timestamp" : "1417251600",
                 "image" : "images/createur/rolandmouret.png",
+                "defile" : "images/defile/11.jpg",
                 "lat" : "48.857966",
                 "lng" : "2.334492",
-                "video_ogv" : "videos/ogg/12.ogg ",
-                "video_mp" : "videos/mp4/12.mp4 ",
-                "video_webm" : "videos/webm/12.webm "
+                "video_ogv" : "videos/ogg/11.ogg ",
+                "video_mp" : "videos/mp4/11.mp4 ",
+                "video_webm" : "videos/webm/11.webm "
             },
             {
                 "titre" : "CARVEN",
                 "lieu" : "Grand Palais",
                 "timestamp" : "1417255200",
                 "image" : "images/createur/carven.png",
+                "defile" : "images/defile/12.jpg",
                 "lat" : "48.866578 ",
                 "lng" : "2.311635",
-                "video_ogv" : "videos/ogg/13.ogg ",
-                "video_mp" : "videos/mp4/13.mp4 ",
-                "video_webm" : "videos/webm/13.webm "
+                "video_ogv" : "videos/ogg/12.ogg ",
+                "video_mp" : "videos/mp4/12.mp4 ",
+                "video_webm" : "videos/webm/12.webm "
             },
             {
                 "titre" : "ANN DEMEULEMEESTER",
                 "lieu" : "Couvent des Cordeliers",
                 "timestamp" : "1417262400",
                 "image" : "images/createur/anndemeulemeester.png",
+                "defile" : "images/defile/13.jpg",
                 "lat" : "48.850953",
                 "lng" : "2.341013",
-                "video_ogv" : "videos/ogg/14.ogg ",
-                "video_mp" : "videos/mp4/14.mp4 ",
-                "video_webm" : "videos/webm/14.webm "
+                "video_ogv" : "videos/ogg/13.ogg ",
+                "video_mp" : "videos/mp4/13.mp4 ",
+                "video_webm" : "videos/webm/13.webm "
             },
             {
                 "titre" : "BALMAIN",
                 "lieu" : "Grand Hôtel de Paris",
                 "timestamp" : "1417269600",
                 "image" : "images/createur/balmain.png",
+                "defile" : "images/defile/14.jpg",
                 "lat" : "48.870781",
                 "lng" : "2.3303",
-                "video_ogv" : "videos/ogg/15.ogg ",
-                "video_mp" : "videos/mp4/15.mp4 ",
-                "video_webm" : "videos/webm/15.webm "
+                "video_ogv" : "videos/ogg/14.ogg ",
+                "video_mp" : "videos/mp4/14.mp4 ",
+                "video_webm" : "videos/webm/14.webm "
             },
             {
                 "titre" : "BARBARA BUI",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417273200",
                 "image" : "images/createur/barbarabui.png",
+                "defile" : "images/defile/15.jpg",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
-                "video_ogv" : "videos/ogg/16.ogg ",
-                "video_mp" : "videos/mp4/16.mp4 ",
-                "video_webm" : "videos/webm/16.webm "
+                "video_ogv" : "videos/ogg/15.ogg ",
+                "video_mp" : "videos/mp4/15.mp4 ",
+                "video_webm" : "videos/webm/15.webm "
             },
             {
                 "titre" : "NINA RICCI",
                 "lieu" : "Espace Éphémère Tuileries",
                 "timestamp" : "1417276800",
                 "image" : "images/createur/ninaricci.png",
+                "defile" : "images/defile/16.jpg",
                 "lat" : "48.863492",
                 "lng" : "2.327494",
-                "video_ogv" : "videos/ogg/17.ogg ",
-                "video_mp" : "videos/mp4/17.mp4 ",
-                "video_webm" : "videos/webm/17.webm "
+                "video_ogv" : "videos/ogg/16.ogg ",
+                "video_mp" : "videos/mp4/16.mp4 ",
+                "video_webm" : "videos/webm/16.webm "
             },
             {
                 "titre" : "LANVIN",
                 "lieu" : "Beaux Arts de Paris",
                 "timestamp" : "1417287600",
                 "image" : "images/createur/lanvin.png",
+                "defile" : "images/defile/17.jpg",
                 "lat" : "48.856601",
                 "lng" : "2.33459",
-                "video_ogv" : "videos/ogg/18.ogg ",
-                "video_mp" : "videos/mp4/18.mp4 ",
-                "video_webm" : "videos/webm/18.webm "
+                "video_ogv" : "videos/ogg/17.ogg ",
+                "video_mp" : "videos/mp4/17.mp4 ",
+                "video_webm" : "videos/webm/17.webm "
             },
             {
                 "titre" : "IRIS VAN HERPEN",
                 "lieu" : "Centre Georges Pompidou",
                 "timestamp" : "1417707000",
                 "image" : "images/createur/irisvanherpen.png",
+                "defile" : "images/defile/18.jpg",
                 "lat" : "48.860642",
                 "lng" : "2.351675",
-                "video_ogv" : "videos/ogg/19.ogg ",
-                "video_mp" : "videos/mp4/19.mp4 ",
-                "video_webm" : "videos/webm/19.webm "
+                "video_ogv" : "videos/ogg/18.ogg ",
+                "video_mp" : "videos/mp4/18.mp4 ",
+                "video_webm" : "videos/webm/18.webm "
             },
             {
                 "titre" : "PAUL & JOE",
                 "lieu" : "Palais de Tokyo",
                 "timestamp" : "1417714200",
                 "image" : "images/createur/paul_joe.png",
+                "defile" : "images/defile/19.jpg",
                 "lat" : "48.864804",
                 "lng" : "2.296514",
-                "video_ogv" : "videos/ogg/20.ogg ",
-                "video_mp" : "videos/mp4/20.mp4 ",
-                "video_webm" : "videos/webm/20.webm "
+                "video_ogv" : "videos/ogg/19.ogg ",
+                "video_mp" : "videos/mp4/19.mp4 ",
+                "video_webm" : "videos/webm/19.webm "
             },
             {
                 "titre" : "ALEXANDER MCQUEEN",
                 "lieu" : "Garde Républicaine",
                 "timestamp" : "1417717800",
                 "image" : "images/createur/alexandermcqueen.png",
+                "defile" : "images/defile/20.jpg",
                 "lat" : "48.851408",
                 "lng" : "2.363857",
-                "video_ogv" : "videos/ogg/21.ogg ",
-                "video_mp" : "videos/mp4/21.mp4 ",
-                "video_webm" : "videos/webm/21.webm "
+                "video_ogv" : "videos/ogg/20.ogg ",
+                "video_mp" : "videos/mp4/20.mp4 ",
+                "video_webm" : "videos/webm/20.webm "
             },
             {
                 "titre" : "LOUIS VUITTON",
                 "lieu" : "Fondation Louis Vuitton",
                 "timestamp" : "1417770000",
                 "image" : "images/createur/louisvuitton.png",
+                "defile" : "images/defile/21.jpg",
                 "lat" : "48.876659",
                 "lng" : "2.263353",
-                "video_ogv" : "videos/ogg/22.ogg ",
-                "video_mp" : "videos/mp4/22.mp4 ",
-                "video_webm" : "videos/webm/22.webm "
+                "video_ogv" : "videos/ogg/21.ogg ",
+                "video_mp" : "videos/mp4/21.mp4 ",
+                "video_webm" : "videos/webm/21.webm "
             },
             {
                 "titre" : "ALLUDE",
                 "lieu" : "Grand Palais",
                 "timestamp" : "1417780800",
                 "image" : "images/createur/allude.png",
+                "defile" : "images/defile/22.jpg",
                 "lat" : "48.866578",
                 "lng" : "2.311635",
-                "video_ogv" : "videos/ogg/23.ogg ",
-                "video_mp" : "videos/mp4/23.mp4 ",
-                "video_webm" : "videos/webm/23.webm "
+                "video_ogv" : "videos/ogg/22.ogg ",
+                "video_mp" : "videos/mp4/22.mp4 ",
+                "video_webm" : "videos/webm/22.webm "
             },
             {
                 "titre" : "MIU MIU",
                 "lieu" : "Palais de Iéna",
                 "timestamp" : "1417784400",
                 "image" : "images/createur/miumiu.png",
+                "defile" : "images/defile/23.jpg",
                 "lat" : "48.8648117",
                 "lng" : "2.293549",
-                "video_ogv" : "videos/ogg/24.ogg ",
-                "video_mp" : "videos/mp4/24.mp4 ",
-                "video_webm" : "videos/webm/24.webm "
+                "video_ogv" : "videos/ogg/23.ogg ",
+                "video_mp" : "videos/mp4/23.mp4 ",
+                "video_webm" : "videos/webm/23.webm "
             },
             {
                 "titre" : "HERMES",
                 "lieu" : "Orangerie, Jardin du Luxembourg ",
                 "timestamp" : "1417791600",
                 "image" : "images/createur/hermes.png",
+                "defile" : "images/defile/24.jpg",
                 "lat" : "48.848754",
                 "lng" : "2.333988",
-                "video_ogv" : "videos/ogg/25.ogg ",
-                "video_mp" : "videos/mp4/25.mp4 ",
-                "video_webm" : "videos/webm/25.webm "
+                "video_ogv" : "videos/ogg/24.ogg ",
+                "video_mp" : "videos/mp4/24.mp4 ",
+                "video_webm" : "videos/webm/24.webm "
             },
             {
                 "titre" : "KENZO",
                 "lieu" : "Voir sur invitation",
                 "timestamp" : "1417510800",
                 "image" : "images/createur/kenzo.png",
+                "defile" : "images/defile/25.jpg",
                 "lat" : "48.898785",
                 "lng" : "2.361284",
-                "video_ogv" : "videos/ogg/26.ogg ",
-                "video_mp" : "videos/mp4/26.mp4 ",
-                "video_webm" : "videos/webm/26.webm "
+                "video_ogv" : "videos/ogg/25.ogg ",
+                "video_mp" : "videos/mp4/25.mp4 ",
+                "video_webm" : "videos/webm/25.webm "
             }
         ]
 }

@@ -53,7 +53,7 @@ var UI = {
 
 			// // Image :
 			var image=document.createElement('img');							// crée l'élément html img
-			image.setAttribute('src',data.events[i].defile);						// assigne l'url de l'image
+			image.setAttribute('src',data.events[i].image;						// assigne l'url de l'image
 			image.setAttribute('alt',"image de l'évènement");					// assigne le texte alternatif
 			image.setAttribute('class','image_event');							// assigne la classe image_event
 			div_event.appendChild(image);										// place l'image dans la div_event
