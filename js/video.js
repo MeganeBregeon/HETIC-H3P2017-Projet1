@@ -6,7 +6,7 @@ player.video=document.getElementById('video');
 player.button=document.getElementById('button');
 player.pB=document.getElementById('progressBar');
 
- player.video.load();
+player.video.load();
 player.button.classList.add('loading');
 
 

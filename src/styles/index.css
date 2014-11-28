@@ -54,6 +54,17 @@ video {
 	width: 100%;
 }
 
+
+.resume{
+	color: #FFFFFF;
+	font-weight: 100;
+	font-size: 25px;
+	margin-top: 25px;
+	text-align: center;
+
+	}
+
+
 #enter {
 	margin: 80px auto;
 	width: 47.77%;

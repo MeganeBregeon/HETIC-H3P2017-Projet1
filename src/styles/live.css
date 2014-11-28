@@ -26,11 +26,9 @@
 /*VIDEO */
 
 
-#video_on_Live video{
-	width: 100%; !important;
-	height: auto; !important;
+video{
+	width: 100%;
 }
-
 
 #liste_live{
 

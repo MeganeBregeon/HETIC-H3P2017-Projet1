@@ -16,24 +16,22 @@ var UI = {
 
 
 
-			//SRC FICHIERS VIDEOS					
-			element_video.setAttribute('src',most_recent_video.video_ogv);						// assigne l'url de l'image
-			element_video.setAttribute('src',most_recent_video.video_mp);					
+			//SRC FICHIERS VIDEOS		
+			element_video.setAttribute('src',most_recent_video.video_mp);
+			// element_video.setAttribute('src',most_recent_video.video_webm);			
+			// element_video.setAttribute('src',most_recent_video.video_ogv);	
 
-			// //PLAYER VIDEO
-			// element_video.setAttribute('class','video_event');							
-			// // assigne la classe video_event
-			// element_video.autoplay = true;
-			// element_video.load(); 
-			
+							
 
-
-			// callback_video.call(this);
+			////////////////// PLAYER VIDEO ORIGINE A GARDER EN CAS DE PROBLEMES ! //////////////
+			element_video.setAttribute('class','video_event');							
+			// assigne la classe video_event
+			element_video.autoplay = true;
+			element_video.controls = true;
+			element_video.load(); 
+			callback_video.call(this);
 
 		},
-
-
-
 
 
 	//affichage events video sur la page live
@@ -53,7 +51,7 @@ var UI = {
 
 			// // Image :
 			var image=document.createElement('img');							// crée l'élément html img
-			image.setAttribute('src',data.events[i].image;						// assigne l'url de l'image
+			image.setAttribute('src',data.events[i].defile);						// assigne l'url de l'image
 			image.setAttribute('alt',"image de l'évènement");					// assigne le texte alternatif
 			image.setAttribute('class','image_event');							// assigne la classe image_event
 			div_event.appendChild(image);										// place l'image dans la div_event
