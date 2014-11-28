@@ -183,28 +183,20 @@ header{
 	z-index:4;
 }
 
-.image_event,.titre_event,.lieu,.icone_lieu,.distance_event,.temps_restant_event,.span_itineraire,#div_map{
+.image_event,.titre_event,.lieu,.icone_lieu,.distance_event,.temps_restant_event,.span_localiser,.span_itineraire,#div_map{
 	position: absolute;
 }
-/*
-.image_event{	
-	top:10px;
-	left: 77px;
-	max-width:220px;	
-	max-height:55px;	
-	opacity: 0.2;
-}*/
 
 .image_event{	
-	top:10px;
+	top:15px;
 	left: 77px;
-	max-width:220px;	
-	max-height:55px;	
+	max-width:190px;	
+	max-height:40px;	
 	opacity: 0.1;
 }
 
 .titre_event{
-	font-size: 13pt;
+	font-size: 11pt;
 	font-weight: 500;
 	left:77px;
 	top:25px;
@@ -213,10 +205,16 @@ header{
 
 .lieu,.icone_lieu{
 	left: 93px;
-	top:68px;
+	top:58px;
 	color: gray;
 	font-size: 10pt;
 	font-weight: 100;
+}
+
+.texte_distance_liste_events{
+	font-weight: bold;
+	font-style: normal;
+	color:gray;
 }
 
 .icone_lieu{
@@ -249,16 +247,45 @@ header{
 .span_itineraire{
 	right:0px;
 	top:0px;
-	font-size:30pt;
-	width:40px;
-	height:40px;
-	padding:25px;
-	font-family:Maps;
+	font-size:11pt;
+	width:90px;
+	height:55px;
+	text-align: center;
+	padding-top:35px;
+	padding-bottom:0px;
+	font-family:Avenir;
 	background-color:#2377BA;
 	color:white;
 	cursor:pointer;
 	z-index:3;
 }
+.span_localiser{
+	right:90px;
+	top:0px;
+	font-size:11pt;
+	width:90px;
+	height:55px;
+	text-align: center;
+	padding-top:35px;
+	padding-bottom:0px;
+	font-family:Avenir;
+	background-color:#08E9A0;
+	color:white;
+	cursor:pointer;
+	z-index:3;	
+}
+
+.icone_slidez{
+	position: absolute;
+	top:36px;
+	right:8px;
+	width: 3px;
+	height: 20px;
+	background-color: silver;
+	opacity: 0.7
+}
+
+/* ––––––––––––––––––––––––– */
 
 .icone_iti{
 	height: 40px;
@@ -275,6 +302,18 @@ header{
 	z-index:2;
 	border-bottom: 1px solid rgba(36,118,186,0.62);
 }
+
+#select_change_mode{
+	position: absolute;
+	right: 15px;
+	top:80px;
+	width: auto;
+	height: 30px;	
+	font-size: 12pt;
+	background-color: white;
+}
+
+
 
 #cancel_iti{
 	position: absolute;
@@ -320,8 +359,7 @@ header{
 	
 }
 
-.event_swiped{
-	background-color: silver;
+.event_swiped{	
 	border-right: 1px solid silver;
 	left:-100px;
 }

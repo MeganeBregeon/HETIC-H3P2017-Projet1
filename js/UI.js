@@ -67,24 +67,29 @@ var UI = {
 				distance.setAttribute('class','distance_event');					// assigne la classe
 				div_touch.appendChild(distance);									// place la distance dans la div_event
 
-				/*
-				// Bouton afficher sur la carte : A FAIRE
 
-				var bouton_iti=document.createTextNode('s');						// crée texte icone itinéraire
-				var span_iti=document.createElement('span');						// crée span accueillant l'icone
-				span_iti.setAttribute('data-lat',data.events[i].lat);				// attribue en data-lat la lat de l'event
-				span_iti.setAttribute('data-lng',data.events[i].lng);				// attribue en data-lng la lng de l'event
-				span_iti.setAttribute('class','span_itineraire');					// attribue la classe pour le css
-				span_iti.setAttribute('onclick',"iti(this)");						// sur clic déclenche fonction itineraire
-				span_iti.appendChild(bouton_iti);									// place icone dans span
-				div_event.appendChild(span_iti);									// place span dans div_event
-				*/
+				// ICONE SLIDEZ:
+				var icone_slidez=document.createElement('span');
+				icone_slidez.setAttribute('class','icone_slidez');
+				div_touch.appendChild(icone_slidez);
+
+
+				// Bouton localiser :
+				var bouton_localiser=document.createTextNode("Localiser");				
+				//bouton_iti.setAttribute('class','icone_iti');							// assigne classe
+				var span_localiser=document.createElement('span');						// crée span accueillant l'icone
+				span_localiser.setAttribute('data-lat',data.events[i].lat);				// attribue en data-lat la lat de l'event
+				span_localiser.setAttribute('data-lng',data.events[i].lng);				// attribue en data-lng la lng de l'event
+				span_localiser.setAttribute('data-titre',data.events[i].titre);			// attribue en data-lng la lng de l'event
+				span_localiser.setAttribute('class','span_localiser');					// attribue la classe pour le css
+				span_localiser.setAttribute('onclick',"localise(this)");				// sur clic déclenche fonction itineraire
+				span_localiser.appendChild(bouton_localiser);									// place icone dans span
+
+
 
 				// Bouton itinéraire :
-				var bouton_iti=document.createElement('img');						// crée image icone itinéraire
-				bouton_iti.setAttribute('src','images/icon/iti.png');				// définit source img
-				bouton_iti.setAttribute('alt','Itinéraire');						// texte alternatif
-				bouton_iti.setAttribute('class','icone_iti');						// assigne classe
+				var bouton_iti=document.createTextNode("Itinéraire");		// crée image icone itinéraire
+				//bouton_iti.setAttribute('class','icone_iti');						// assigne classe
 				var span_iti=document.createElement('span');						// crée span accueillant l'icone
 				span_iti.setAttribute('data-lat',data.events[i].lat);				// attribue en data-lat la lat de l'event
 				span_iti.setAttribute('data-lng',data.events[i].lng);				// attribue en data-lng la lng de l'event
@@ -95,6 +100,7 @@ var UI = {
 
 
 				div_event.appendChild(div_touch);						// div touch 	dans div event
+				div_event.appendChild(span_localiser);						// span 		dans div_event
 				div_event.appendChild(span_iti);						// span 		dans div_event
 				//span_iti.style.visibility='hidden';
 
@@ -106,13 +112,16 @@ var UI = {
 	},
 
 	ajoute_distance_events : function(distances,nb_events_finis,callback){
-		var zone_distance = document.querySelectorAll('.distance_event');
+		//var zone_distance = document.querySelectorAll('.distance_event');
+		var zone_distance = document.querySelectorAll('.lieu');
 		var nb=nb_events_finis;
 		
-			for(var i=nb;i<distances.length-nb;i++){
-				var texte_distance = document.createTextNode(distances[i]);	
-				//console.log('i = ',texte_distance,' ',zone_distance[i]);			
-				zone_distance[i-5].appendChild(texte_distance);
+			for(var i=nb;i<distances.length;i++){
+				//var texte_distance = document.createTextNode(distances[i]);					
+				//zone_distance[i-nb].appendChild(texte_distance);
+				
+				zone_distance[i-nb].innerHTML="<em class='texte_distance_liste_events'>"+distances[i]+"</em> - "+zone_distance[i-nb].innerHTML;
+				//console.log(zone_distance[i-nb].innerHTML);
 			}
 			callback.call(this);
 	},
@@ -200,33 +209,101 @@ var UI = {
 	            var select_change_mode=document.createElement('select');
 	            select_change_mode.setAttribute('id','select_change_mode');
 	            select_change_mode.setAttribute('type','button');
-	            select_change_mode.setAttribute('onchange','change_mode_iti()');
+	            select_change_mode.setAttribute('data-lat',lat_event);
+	            select_change_mode.setAttribute('data-lng',lng_event);
+	            select_change_mode.setAttribute('onchange','change_mode_iti(this)');
+	            head_nav_iti.appendChild(select_change_mode);
 
 	            var driving=document.createElement('option');
 	            driving.setAttribute('value','driving');
 	            driving.setAttribute('id','driving_option');
-	            driving.innerHTML="<img src='images/icon/car_mode.png' id='icon_car_mode' alt='Voiture'/>";
+	            driving.innerHTML="voiture";
+	            
 
    	            var walking=document.createElement('option');
 	            walking.setAttribute('value','walking');
 	            walking.setAttribute('id','walking_option');
-	            walking.innerHTML="<img src='images/icon/pieton_mode.png' id='icon_pieton_mode' alt='Piéton'/>";
+	            walking.innerHTML="pi&eacute;ton";
+				
 
+				if(walking_or_driving=='driving'){
+					select_change_mode.appendChild(driving);
+					select_change_mode.appendChild(walking);
+				}
+				if(walking_or_driving=='walking'){					
+					select_change_mode.appendChild(walking);
+					select_change_mode.appendChild(driving);
+				}	
               }
-            });
-
-          callback.call(this);
+            });          
   	},
 
-  	delete_map_iti : function(e){
+  	delete_map_iti : function(){
 		var delete_map = document.getElementById('div_map_iti');
 		delete_map.parentNode.removeChild(delete_map);						// delete la map iti
-		this.parentNode.parentNode.removeChild(this.parentNode);			// delete la nav iti
+
+		var nav=document.getElementById('head_nav_iti');
+		nav.parentNode.removeChild(nav);									// delete la nav iti
 
 		var toutes_div_touch=document.querySelectorAll('.div_touch');
 		for(var i=0;i<toutes_div_touch.length;i++){
 			UI.touch_reset_position(toutes_div_touch[i]);					// reinit positions events
 		}
+	},
+
+	map_localise : function(lat,lng,titre){
+
+
+
+		var map;
+		var center_map=new google.maps.LatLng(lat,lng); // centre carte = châtelet les halles
+		var mapOptions = {
+			zoom: 12,
+			center: center_map
+		};
+
+		var div_map=document.createElement('div');								// crée div map
+	    div_map.setAttribute('id','div_map_iti');								// assigne id
+	    var conteneur=document.getElementById('header');						// get le conteneur
+	    conteneur.appendChild(div_map);											// place div map dans le conteneur
+
+        //––––––––– CREA NAV MAP ––––––––––
+        var head_nav_iti=document.createElement('div');							// crée div nav
+        head_nav_iti.setAttribute('id','head_nav_iti');							// assigne id
+		conteneur.appendChild(head_nav_iti);									// place nav dans le conteneur
+        //–––––––– ICONE ANNULER / RETOUR AUX EVENTS :
+        var cancel_iti=document.createElement('img');							// crée image
+		cancel_iti.setAttribute('src','images/icon/cancel_iti.png');			// assigne l'url de l'image
+		cancel_iti.setAttribute('alt',"image de l'évènement");					// assigne le texte alternatif
+		cancel_iti.setAttribute('id','cancel_iti');								// assigne l'id
+		head_nav_iti.appendChild(cancel_iti);									// place l'image dans la nav
+
+		cancel_iti.addEventListener('click',UI.delete_map_iti,false);				// écouteur de retour aux events
+
+        // TEXTE TITRE :
+        var text_titre=document.createTextNode(titre);
+        var element_titre=document.createElement('h2');					// crea h3 pour duration
+        element_titre.setAttribute('id','temps_trajet');					// assigne id
+        element_titre.appendChild(text_titre);						// place duration text dans h2
+        head_nav_iti.appendChild(element_titre);
+
+
+		map = new google.maps.Map(div_map,mapOptions);
+
+		var marker = new google.maps.Marker({
+			position: center_map,
+			map: map,
+			title: titre
+		});
+
+		var infowindow = new google.maps.InfoWindow({
+			content: titre
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+			infowindow.open(map,marker);
+		});
+
 	},
 
   	touch_move : function(div_touch,offset){
@@ -241,7 +318,7 @@ var UI = {
 	},
 
 	touch_event_swiped : function(elmt){
-		elmt.style.left='-91px';
+		elmt.style.left='-181px';
 		elmt.classList.remove('event_swiping');		// event n'est plus en CSS swiping
 		elmt.classList.add('event_swiped');			// event est CSS swipé
 	},
@@ -256,6 +333,8 @@ var UI = {
 		};
 		map = new google.maps.Map(document.getElementById('map_view'),mapOptions);
 		callback.call(this,map);
+
+
 	}, 
 
 	map_add_markers : function(map,data){

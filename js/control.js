@@ -3,7 +3,7 @@
 // –––––––––––––––   RECUP EVENEMENTS   –––––––––––––––
 
 if(document.getElementById('liste_events')){					// si on est sur la page events 
-	console.log('Page Events');
+	
 	model.getJSON('js/events.json',function(data) {				// si model.getJSON récup events :	
 			UI.affiche_liste_events(data,				
 				function(div_touch){		
@@ -69,20 +69,45 @@ function itineraire_from_info_window(recup_lat_lng){
 	var walking_or_driving='driving';
 
 	model.getUserLocation(function(userPos){	
-		UI.map_iti(lat,lng,userPos,walking_or_driving,function(){
-		});
+		UI.map_iti(lat,lng,userPos,walking_or_driving);
 	});
-
 }
 
-function change_mode_iti(){
+function change_mode_iti(select_change_mode){
+	var lat=select_change_mode.getAttribute('data-lat');
+	var lng=select_change_mode.getAttribute('data-lng');
+
 	var travel_mode=document.getElementById('select_change_mode').value;
-	console.log('select_change_mode = ',travel_mode);
+	//console.log('select_change_mode = ',travel_mode);
+	UI.delete_map_iti();
+	model.getUserLocation(function(userPos){	
+		UI.map_iti(lat,lng,userPos,travel_mode);
+	});	
+}
+
+// –––––––––––––––––   ITINERAIRE   –––––––––––––––––––
+
+function localise(recup_span){
+
+	var lat=parseFloat(recup_span.getAttribute('data-lat'));
+	var lng=parseFloat(recup_span.getAttribute('data-lng'));
+	var titre=recup_span.getAttribute('data-titre');
+
+	UI.map_localise(lat,lng,titre);
 }
 
 // –––––––––––––––   OBJET CONTROL   –––––––––––––––––
 
 var control={
+/*
+	touch_move : function(e){
+		//e.preventDefault(); 									//!!!	Si e.preventDefault() activé, empêche le scroll … 
+		var offset=e.changedTouches[0].pageX-control.startX;		// offset = différence X entre touchstart et now
+				
+		if(offset<40 && offset>-100){						// réglage du touch délicat … 
+				UI.touch_move(this,offset);					// s'il y a mouvement comme défini, on bouge la div
+		}
+	},*/
 
 	touch_move : function(e){
 		//e.preventDefault(); 									//!!!	Si e.preventDefault() activé, empêche le scroll … 

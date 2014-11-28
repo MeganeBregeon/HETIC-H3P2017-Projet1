@@ -42,7 +42,7 @@
             },
             {
                 "titre" : "CHRISTOPHE LEMAIRE", 
-                "lieu" : "Bibliothèque nationale de France",             
+                "lieu" : "Bibliothèque nat. de France",             
                 "timestamp" : "1417165200",
                 "image" : "images/createur/christophelemaire.png",
                 "lat" : "48.833903",
@@ -79,6 +79,14 @@
                 "image" : "images/createur/aganovich.png",
                 "lat" : "48.864804",
                 "lng" : "2.296514"
+            },
+            {
+                "titre" : "BALENCIAGA", 
+                "lieu" : "Voir sur invitation",             
+                "timestamp" : "1417201200",
+                "image" : "images/createur/balenciaga.png",
+                "lat" : "48.863607",
+                "lng" : "2.297394"
             },
             {
                 "titre" : "ROLAND MOURET", 
@@ -210,7 +218,7 @@
             },
             {
                 "titre" : "VIVIENNE WESTWOOD", 
-                "lieu" : "Hôtel The Westin Paris - Vendôme",             
+                "lieu" : "Hôtel The Westin Paris",             
                 "timestamp" : "1417447800",
                 "image" : "images/createur/viviennewestwood.png",
                 "lat" : "48.865739",
@@ -233,20 +241,20 @@
                 "lng" : "2.255435"
             },
             {
+                "titre" : "KENZO", 
+                "lieu" : "Voir sur invitation",             
+                "timestamp" : "1417510800",
+                "image" : "images/createur/kenzo.png",
+                "lat" : "48.898785",
+                "lng" : "2.361284"
+            },
+            {
                 "titre" : "CHLOÉ", 
                 "lieu" : "Grand Palais",             
                 "timestamp" : "1417532400",
                 "image" : "images/createur/chloe.png",
                 "lat" : "48.866578",
                 "lng" : "2.311635"
-            },
-            {
-                "titre" : "STELLA MCCARTNEY", 
-                "lieu" : "Opera Garnier",             
-                "timestamp" : "1417597200",
-                "image" : "images/createur/stellamccartney.png",
-                "lat" : "48.872347",
-                "lng" : "2.331639"
             },
             {
                 "titre" : "JOHN GALLIANO", 
@@ -265,6 +273,14 @@
                 "lng" : "2.30736"
             },
             {
+                "titre" : "STELLA MCCARTNEY", 
+                "lieu" : "Opera Garnier",             
+                "timestamp" : "1417597200",
+                "image" : "images/createur/stellamccartney.png",
+                "lat" : "48.872347",
+                "lng" : "2.331639"
+            },
+            {
                 "titre" : "LEONARD PARIS", 
                 "lieu" : "Palais de Tokyo",             
                 "timestamp" : "1417604400",
@@ -281,14 +297,6 @@
                 "lng" : "2.327494"
             },
             {
-                "titre" : "CHANEL", 
-                "lieu" : "Grand Palais, Galerie Sud-Est",             
-                "timestamp" : "1417685400",
-                "image" : "images/createur/chanel.png",
-                "lat" : "48.865896",
-                "lng" : "2.313806"
-            },
-            {
                 "titre" : "SONIA RYKIEL", 
                 "lieu" : "Galerie Nikki Diana Marquardt",             
                 "timestamp" : "1417626000",
@@ -303,6 +311,14 @@
                 "image" : "images/createur/saintlaurent.png",
                 "lat" : "48.863695",
                 "lng" : "2.361121"
+            },
+            {
+                "titre" : "CHANEL", 
+                "lieu" : "Grand Palais, Galerie Sud-Est",             
+                "timestamp" : "1417685400",
+                "image" : "images/createur/chanel.png",
+                "lat" : "48.865896",
+                "lng" : "2.313806"
             },
             {
                 "titre" : "AGNÈS B", 
@@ -370,27 +386,11 @@
             },
             {
                 "titre" : "HERMES", 
-                "lieu" : "Orangerie, Jardin du Luxembourg ",             
+                "lieu" : "Jardin du Luxembourg ",             
                 "timestamp" : "1417791600",
                 "image" : "images/createur/hermes.png",
                 "lat" : "48.848754",
                 "lng" : "2.333988"
-            },
-            {
-                "titre" : "KENZO", 
-                "lieu" : "Voir sur invitation",             
-                "timestamp" : "1417510800",
-                "image" : "images/createur/kenzo.png",
-                "lat" : "48.898785",
-                "lng" : "2.361284"
-            },
-            {
-                "titre" : "BALENCIAGA", 
-                "lieu" : "Voir sur invitation",             
-                "timestamp" : "1417201200",
-                "image" : "images/createur/balenciaga.png",
-                "lat" : "48.863607",
-                "lng" : "2.297394"
             }
         ]
 }

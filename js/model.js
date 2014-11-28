@@ -66,7 +66,7 @@ var model = {
                               var results = response.rows[i].elements;
                                 for (var j = 0; j < results.length; j++) {   
                                       // donne les distances :                                    
-                                      var distance_event=''+parseInt(results[j].distance.text)+' km'; 
+                                      var distance_event=''+parseInt(results[j].distance.text)+'km'; 
                                       distances.push(distance_event);
 
                                       if(distances.length>(tableau_coords_events.length-1)){                                        
