@@ -1,0 +1,406 @@
+*{margin:0;padding:0;}
+
+body{
+	font-size:15pt;
+	font-family:Avenir;	
+}
+
+a{text-decoration:none;}
+
+/* –––––––––––––– PHONEGAP –––––––––––––––– */
+#div_haut{
+	position:relative;
+	display: block;
+	top:0px;
+	left:0px;
+	height:20px;			
+	z-index: 20;
+}
+
+/* ––––––––––––– PAGE ACCUEIL –––––––––––––– */
+
+#logo_accueil{
+	position: relative;
+	top:50px;
+	width: 50%;
+	margin-left:25%;	
+}
+
+#zone_liens{
+	position: relative;
+	top:90px;
+	width: 100%;
+	line-height: 0;
+}
+
+#eiffel_tower{
+	position: relative;
+	top:0px;
+	width: 100%;
+	height: 95px;
+	margin: 0;
+	background: url('../images/eiffel_tower.png')left bottom;
+	background-size: cover;
+}
+
+#lien_events,#lien_map{
+	position: relative;
+	display: block;
+	top:0px;
+	left: 0px;
+	width: 50%;
+	height: 47px;
+	text-align: center;
+	padding-top:48px;
+	background-color: #08E9A0;
+	color: white;
+	font-size: 13pt;
+	font-weight: 100;
+}
+
+#lien_map{
+	position: absolute;
+	left: 50%;
+	top:95px;
+	background-color: #2377BA;
+}
+
+#zone_icones_page_accueil{
+	position: relative;
+	top:120px;
+	width:80px;
+	height: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#icone_events_page_accueil{
+	position:absolute;
+	top:0px;
+	height:35px;
+	left:0px;
+}
+#icone_map_page_accueil{
+	position:absolute;
+	top:0px;
+	height:33px;
+	right:0px;
+}
+
+#explic_accueil{
+	position: relative;
+	top:130px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size:11pt;
+	text-align: center;
+	font-weight: 100;
+}
+
+/* –––––––––––– HEADER –––––––––––– */
+header{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	background-color:#2377ba;
+	border-bottom: 1px solid gray;
+	z-index:10;
+}
+
+#lien_header_G{
+	position: absolute;
+	top:20px;
+	left:0px;
+	height: 50px;
+	width: 60px;
+	z-index: 40;
+}
+
+#lien_header_D{
+	position: absolute;
+	top:20px;
+	right:0px;
+	height: 50px;
+	width: 60px;
+	z-index: 40;
+}
+
+#icone_events,#icone_map{
+	position: absolute;
+	top:8px;
+	height: 35px;
+	z-index: 30;
+}
+
+#icone_events{
+	left:15px;
+}
+#icone_map{
+	right:15px;
+}
+
+#logo_header{
+	position: relative;	
+	height:25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	padding-top: 13px;
+	z-index: 3
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––– PAGE EVENTS ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#liste_events{
+	position: relative;
+	top:70px;
+	left:0px;
+}
+
+.div_event{
+	position: relative;
+	width:100%;
+	height: 80px;
+	padding: 5px 0px;
+	border-bottom: 1px solid silver;	
+	
+	z-index:2;
+}
+
+.div_touch{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color: white;
+	z-index:4;
+}
+
+.image_event,.titre_event,.lieu,.icone_lieu,.distance_event,.temps_restant_event,.span_itineraire,#div_map{
+	position: absolute;
+}
+/*
+.image_event{	
+	top:10px;
+	left: 77px;
+	max-width:220px;	
+	max-height:55px;	
+	opacity: 0.2;
+}*/
+
+.image_event{	
+	top:10px;
+	left: 77px;
+	max-width:220px;	
+	max-height:55px;	
+	opacity: 0.1;
+}
+
+.titre_event{
+	font-size: 13pt;
+	font-weight: 500;
+	left:77px;
+	top:25px;
+	width: 215px;
+}
+
+.lieu,.icone_lieu{
+	left: 93px;
+	top:68px;
+	color: gray;
+	font-size: 10pt;
+	font-weight: 100;
+}
+
+.icone_lieu{
+	left:74px;
+	height:17px;
+}
+
+.distance_event{
+	top:68px;
+	right:5px;
+	font-size: 9pt;
+	font-weight:300;
+	color: gray;
+}
+
+.temps_restant_event{
+	top:18px;
+	left:10px;
+	padding:15px 0px;
+	width:53px;
+	text-align: center;
+	font-size: 12pt;
+	font-style: normal; 
+	color: gray;
+	font-weight: 600;
+	border:4px solid #555C5F;
+	border-radius: 50px;
+}
+
+.span_itineraire{
+	right:0px;
+	top:0px;
+	font-size:30pt;
+	width:40px;
+	height:40px;
+	padding:25px;
+	font-family:Maps;
+	background-color:#2377BA;
+	color:white;
+	cursor:pointer;
+	z-index:3;
+}
+
+.icone_iti{
+	height: 40px;
+}
+
+#head_nav_iti{
+	position: fixed;
+	left: 0px;
+	top:70px;
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	color: #2377BA;
+	z-index:2;
+	border-bottom: 1px solid rgba(36,118,186,0.62);
+}
+
+#cancel_iti{
+	position: absolute;
+	left: 15px;
+	top:17px;
+	height:20px;	
+	z-index:10;	
+}
+
+#cancel_iti:hover,#cancel_iti:active{
+	opacity: 0.5;
+}
+
+#temps_trajet{
+	position: relative;
+	top: 15px;
+	width: 100%;
+	text-align: center;
+	font-size: 14pt;
+}
+
+#distance_trajet{
+	position: absolute;
+	right: 15px;
+	top:18px;
+	font-size: 12pt;
+	font-weight: 700;
+}
+
+#div_map_iti{	
+	position:fixed;
+	top:60px;
+	left:0px;	
+	width:100%;		
+	height: 450px;
+	z-index:1;	
+	background-color:silver;	
+}
+
+/* –––––––––– TOUCH STYLE –––––––––––––– */
+
+.event_swiping{
+	
+}
+
+.event_swiped{
+	background-color: silver;
+	border-right: 1px solid silver;
+	left:-100px;
+}
+
+
+
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––– PAGE MAP ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+#map_view{
+	position: absolute;
+	top:70px;
+	left:0px;
+	width: 100%;
+	background-color: gray;
+	height: 88%;
+}
+
+
+.info_window_perso{
+	width: 230px;
+	height: 150px;
+	
+}
+
+.zone_image_event_info_window{
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+.image_event_info_window{
+	position: relative;
+	max-width: 220px;
+	max-height: 60px;
+	margin-left: auto;
+	margin-right: auto;	
+	opacity: 0.2
+}
+
+.titre_info_window{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top:20px;
+}
+
+.lieu_info_window{
+	position: absolute;
+	left:3px;
+	top:70px;
+	font-size:10pt;
+	width: 100%;
+	text-align: center;
+}
+
+.bouton_iti_info_window{
+	position:absolute;
+	top:100px;
+	left:63px;
+	width:130px;
+	padding:10px 0px;
+	background-color:#2377BA;
+	text-align: center;
+	color: white;
+	font-size: 10pt;
+	border-radius:2px;
+}
+
+
+
+
+
+
+
+
+
+
