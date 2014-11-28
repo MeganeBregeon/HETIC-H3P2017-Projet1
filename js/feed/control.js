@@ -53,7 +53,9 @@ function search_key(e){
 	if (e){
 		e.preventDefault();
 	}	
-	var keywords = document.getElementById('key').value;								// on récupère les keywords saisis
+	var keywords = document.getElementById('key').value;
+	keywords = keywords.replace(' ', '');
+	console.log(keywords);							// on récupère les keywords saisis
 	var result_type = document.querySelector("select[name='result_type']").value;		// on récup. result_type = recent / populaire
 	
 	search_social(keywords,result_type);		

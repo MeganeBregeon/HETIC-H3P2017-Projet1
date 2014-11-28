@@ -4,30 +4,21 @@ html, body {
 
 }
 
-
-
 /* FEED PAGE */
-
-
-			/***** MENU *****/
-
+/***** MENU *****/
 .navi{
 
 	width: 100%;
 	height: 120px;
 	border-bottom: 3px solid #F7F7F7;
 	background-color: #fff;
-
 }
-
 
 #logo{
 	width: 18%;
 	margin-left:6%;
 	position: absolute;
 	margin-top: 5px;
-
-
 }
 
 #logo img{
@@ -42,41 +33,30 @@ html, body {
 	display: inline-block;
 	margin-left: 5%;
 	margin-top: 2%;
-
-
-
 }
 
 .navi h2 a{
 	text-decoration: none;
-	color: #000000;
-	
+	color: #000000;	
 }
 
 /********* MENU  RIGHT *******/
-
-
 #menu ul {
 	display: block;
 }
 #menu ul li{
 	display: inline-block;
-	margin-top: 30px;
-
-	
+	margin-top: 30px;	
 }
 
 #menu ul li :last-child{
 	margin-left: -5px;
-	padding: 5px 10px;
-
+	padding: 18px 10px;
 }
-
 
 #menu {
 	margin-left: 78%;
 }
-
 
 #menu a { 
 	font-family: 'Open Sans', sans-serif;
@@ -85,7 +65,6 @@ html, body {
 	text-decoration: none; 
 	color: #000000;
 	background-color:#F6F6F6;
-
 }
 
 #menu a:hover { color: #2377BA; }
@@ -96,11 +75,7 @@ html, body {
 	font-weight: 400;
 }
 
-
-
 			/**** FILTER ****/
-
-
 #filter{
 	text-align: center;
 	background-color: #FAFAFA;
@@ -124,15 +99,12 @@ html, body {
   -ms-transition: border-bottom .25s ;
   -o-transition: border-bottom .25s ;
   transition: border 1s FadeIn ;
-
-
 }
 
 #filter a:hover{
 	font-weight: 400;
 	border-bottom: 1px solid #08E9A0 ;
 	cursor: pointer;
-
 }
 
 
@@ -143,8 +115,7 @@ html, body {
 }
 
 
-
-			/**** BOARD ****/
+/**** BOARD ****/
 
 .board{
 	width: 100%;
@@ -153,9 +124,7 @@ html, body {
 	padding: 5% 8%;
 }
 
-
-
-			/***** FOOTER ****/
+/***** FOOTER ****/
 footer{
 	width: 100%;
 	height: 100%;
@@ -167,45 +136,73 @@ footer{
 	bottom:0;
 }
 
-footer ul{
-	font-size: 10px;
+#copyright ul{
+	font-size: 11px;
 	font-weight: 100;
 	clear: both;
+	padding: 2% 0% 1% 0%;
 }
 
-footer ul li{
+#copyright ul li{
 	display: inline-block;
 	padding: 10px 10px;
 }
 
 #footer_content{
 	margin: auto;
-	width: 70%;
+	width: 68.75%;
 }
 
+#pfw {
+	display: block;
+	float: left;
+	width: 24.8%;
+	text-align: left;
+}
+
+#pfw img{
+	width: 100%;
+}
+
+#pfw p, #app p{
+	font-weight: 100;
+margin: 15px 0px 0px 7px;;
+font-size: 14px;
+color: #B4B4B4;
+line-height: 1.3;
+}
 
 #app {
 	display: block;
 	float: left;
-	width: 30%;
+width: 35%;
+margin: 6.4% 12.5% 0% 12.5%;
 	text-align: left;
 }
+
+#app h3 {
+	margin-left: 2%;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+#app img{
+	width: 30%;
+margin: 4% 5% 0% 1.5%;
+}
+
 #social {
+	text-align: left;
 	display: block;
 	float: left;
-	width: 30%;
+	width: 15%;
+	margin-top: 6.4%;
+}
+
+#social ul li{
+	padding-top: 6px;
 }
 
 #social p {
 	font-weight: 100;
 }
-
-#app img{
-	width: 40%;
-}
-
-
-
-
-
-

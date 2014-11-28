@@ -1,12 +1,5 @@
-
 /******** LIVE PAGE *******/
-
-
-/*PLAYER VIDEO
-*/
-
-
-
+/*PLAYER VIDEO*/
 #progressBar{width:80%;height:8px;border-radius:4px;border:1px solid #fff;position:absolute;bottom:20px;left:10%;opacity:.6;z-index:6;}
 #progressBar span{border-top-left-radius:2px;border-bottom-left-radius:2px;height:6px;background-color:#fff;display:inline-block;position:absolute;top:1px;}
 
@@ -24,8 +17,6 @@
 }
 
 /*VIDEO */
-
-
 video{
 	width: 100%;
 }
@@ -38,13 +29,11 @@ video{
 
 }
 
-
 	#liste_live h5{
 		text-align: center;
 		padding-top:10px;
 		font-size: 12px;
 	}
-
 
 .event{
 	float: left;
@@ -54,15 +43,9 @@ video{
 	border-radius: 5px;
 	font-weight: 100;
 	font-size: 10px;
-
-
 }
 
-
-
-
-#liste_live h3{
-	
+#liste_live h3{	
 	background-color: #E7E7E7;
 	font-size: 12px;
 	font-weight: 600;

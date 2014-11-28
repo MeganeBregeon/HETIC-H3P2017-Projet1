@@ -3,24 +3,22 @@
 var ui = {
 
 	playloader : function(){
-		if(document.getElementById('video')){
-			var video = document.getElementById('video');
-			video.parentNode.removeChild(video);
+		if(document.getElementById('gif')){
+			var gif = document.getElementById('gif');
+			gif.parentNode.removeChild(gif);
 		}
 		var divloader = document.getElementById('loader');
-		var loader = document.createElement('video');
-		loader.setAttribute('src', 'src/video/loader.mp4');
-		loader.setAttribute('id', 'video');
-		loader.autoplay = true;
-		loader.load();
+		var loader = document.createElement('img');
+		loader.setAttribute('src', 'src/img/loader.gif');
+		loader.setAttribute('id', 'gif');
 		divloader.appendChild(loader);
 
 
 	},
 
 	stoploader : function(){
-		var video= document.getElementById('video');
-		video.parentNode.removeChild(video);
+		var gif= document.getElementById('gif');
+		gif.parentNode.removeChild(gif);
 	},
 
 
@@ -58,27 +56,6 @@ var ui = {
 
 					content.appendChild(mask);
 
-						// p .author
-						var author=document.createElement('p');
-						author.setAttribute('class', 'author');
-						mask.appendChild(author);
-
-							// Par (txt)
-							var by=document.createTextNode("Par ");
-							author.appendChild(by);
-
-							// User URL
-							var userlink=document.createElement('a');
-							userlink.setAttribute('target', 'blanck');
-							userlink.setAttribute('href','http://www.twitter.com/'+mediatweet[i].user.name);
-							userlink.setAttribute('class','userlink');
-
-							author.appendChild(userlink);
-
-								// User Name
-								var text=document.createTextNode(mediatweet[i].user.name);
-								userlink.appendChild(text);
-
 						//p .count
 						var count=document.createElement('p');
 						count.setAttribute('class', 'count');
@@ -103,12 +80,42 @@ var ui = {
 							count.appendChild(iconfavorite);
 
 								// icone favorite
-								var texticonfavorite=document.createTextNode('F');
+								var texticonfavorite=document.createTextNode('  F');
 								iconfavorite.appendChild(texticonfavorite);
 
 							//p
 							var favorite=document.createTextNode(mediatweet[i].favorite_count);
 							count.appendChild(favorite);
+
+						// p .author
+						var author=document.createElement('p');
+						author.setAttribute('class', 'author');
+						mask.appendChild(author);
+
+							// span twitter
+							var icontwitter=document.createElement('span');
+							icontwitter.setAttribute('class', 'icon');
+							author.appendChild(icontwitter);
+
+								//icon
+								var texticontwitter=document.createTextNode("T ");
+								icontwitter.appendChild(texticontwitter);
+
+							// Par (txt)
+							var by=document.createTextNode("Par ");
+							author.appendChild(by);
+
+							// User URL
+							var userlink=document.createElement('a');
+							userlink.setAttribute('target', 'blanck');
+							userlink.setAttribute('href','http://www.twitter.com/'+mediatweet[i].user.name);
+							userlink.setAttribute('class','userlink');
+
+							author.appendChild(userlink);
+
+								// User Name
+								var text=document.createTextNode(mediatweet[i].user.name);
+								userlink.appendChild(text);
 
 
 				// img .img_tweet
@@ -139,27 +146,6 @@ var ui = {
 
 				contentinsta.appendChild(mask);
 					
-					// p .author
-					var author=document.createElement('p');
-					author.setAttribute('class', 'author');
-					mask.appendChild(author);
-
-					// Par (txt)
-						var by=document.createTextNode("Par ");
-						author.appendChild(by);
-
-						// User URL
-						var userlink=document.createElement('a');
-						userlink.setAttribute('target', 'blanck');
-						userlink.setAttribute('href','http://instagram.com/'+instas[i].user.username);
-						userlink.setAttribute('class','userlink');
-
-						author.appendChild(userlink);
-
-						// User Name
-						var text=document.createTextNode(instas[i].user.username);
-						userlink.appendChild(text);
-
 					//p .count
 					var count=document.createElement('p');
 					count.setAttribute('class', 'count');
@@ -184,12 +170,43 @@ var ui = {
 						count.appendChild(icon);
 
 							// icone comment
-							var icon_comment=document.createTextNode('C');
+							var icon_comment=document.createTextNode('  C');
 							icon.appendChild(icon_comment);
 
 						//
 						var comment=document.createTextNode(instas[i].comments.count);
-						count.appendChild(icon_comment);
+						count.appendChild(comment);
+
+					// p .author
+					var author=document.createElement('p');
+					author.setAttribute('class', 'author');
+					mask.appendChild(author);
+					
+					// span twitter
+					var iconinsta=document.createElement('span');
+					iconinsta.setAttribute('class', 'icon');
+					author.appendChild(iconinsta);
+
+						//icon
+						var texticoninsta=document.createTextNode("I ");
+						iconinsta.appendChild(texticoninsta);
+
+					// Par (txt)
+						var by=document.createTextNode("Par ");
+						author.appendChild(by);
+
+						// User URL
+						var userlink=document.createElement('a');
+						userlink.setAttribute('target', 'blanck');
+						userlink.setAttribute('href','http://instagram.com/'+instas[i].user.username);
+						userlink.setAttribute('class','userlink');
+
+						author.appendChild(userlink);
+
+						// User Name
+						var text=document.createTextNode(instas[i].user.username );
+						userlink.appendChild(text);
+
 
 
 			// img .img_instagram
@@ -335,33 +352,7 @@ var ui = {
 
 						form.appendChild(liste_imposee);
 
-						var celebrities=["AngelinaJolie","ScarlettJohansson","MilaKunis","EvaLongoria",
-						"Anna Mouglalis",
-"Catherine Deneuve",
-"Cécile Cassel",
-"Claudia Schiffer",
-"Courtney Love",
-"Dita Von Teese",
-"Emma De Caunes",
-"Janet Jackson",
-"Julie Depardieu",
-"Justin Timberlake",
-"Kanye West",
-"Kate Moss",
-"Keira Knightley",
-"Kim Kardashian",
-"Lenny Kravit",
-"Lily Allen",
-"Micky Green",
-"Milla Jovovich", 
-"Nathalie Baye",
-"Orlando Bloom",
-"RachidaBrakni ",
-"SalmaHayek",
-"VanessaParadis",
-"VirginieEfira",
-"VirginieLedoyen"
-];
+						var celebrities=["AngelinaJolie","ScarlettJohansson","MilaKunis","EvaLongoria","Anna Mouglalis","Catherine Deneuve","Cécile Cassel","Claudia Schiffer","Courtney Love","Dita Von Teese","Emma De Caunes","Janet Jackson","Julie Depardieu","Justin Timberlake","Kanye West","Kate Moss","Keira Knightley","Kim Kardashian","Lenny Kravit","Lily Allen","Micky Green","Milla Jovovich", "Nathalie Baye","Orlando Bloom","Rachida Brakni ","Salma Hayek","Vanessa Paradis","Virginie Efira","Virginie Ledoyen"];
 
 						for (var i=0;i<celebrities.length;i++){
 							var cel=document.createElement('option');
