@@ -38,7 +38,6 @@ function recup_distance(data,nb_events_finis){
 	model.generate_tableau_coords_events(data, function(tableau_coords_events){			// lorsque le tableau de coords est fait
 		model.getUserLocation(function(userPos){										// on obtient la position				
 			model.calculateDistances(userPos.lat,userPos.lng,tableau_coords_events, function(distances){	// calc distance
-				console.log(nb_events_finis);
 				UI.ajoute_distance_events(distances,nb_events_finis,function(){
 					// console.log('Distances ajoutées');
 				});

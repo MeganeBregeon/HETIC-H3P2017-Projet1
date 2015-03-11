@@ -348,7 +348,7 @@ header{
 	top:60px;
 	left:0px;	
 	width:100%;		
-	height: 450px;
+	height:450px;
 	z-index:1;	
 	background-color:silver;	
 }
@@ -434,6 +434,26 @@ header{
 }
 
 
+
+
+/* ––––––––––––––––––– RESPONSIVE ––––––––––––––––––––– */
+
+
+@media (min-width: 350px) {
+
+	#div_map_iti{
+		height:830px;
+	}
+
+}
+
+@media (min-width: 770px) {
+
+	#div_map_iti{
+		height:570px;
+	}
+	
+}
 
 
 

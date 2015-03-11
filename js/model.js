@@ -104,15 +104,15 @@ var model = {
       );
     },
 
-    calcul_temps_restant : function(timestamp_event){
-      var timestamp_now = new Date().getTime();
+    // calcul_temps_restant : function(timestamp_event){
+      calcul_temps_restant : function(i_event){
+ /*     var timestamp_now = new Date().getTime();
       var timenow = Math.floor((timestamp_now/1000));
       var min_now = timenow/60;
-
-      //var timestamp_event = 1416156900;
       var min_event = Math.floor(timestamp_event/60);
-
       var min_restant = Math.floor(min_event-min_now);
+*/
+      var min_restant = (i_event+1)*100;
       var affichage;
 
         if (min_restant<1){

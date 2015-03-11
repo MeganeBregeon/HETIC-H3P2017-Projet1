@@ -55,7 +55,7 @@ var UI = {
 
 
 				// Temps restant :
-				var texte_temps=document.createTextNode(model.calcul_temps_restant(data.events[i].timestamp));
+				var texte_temps=document.createTextNode(model.calcul_temps_restant(i));
 				var temps=document.createElement('h5');								// crée l'élément html h6 pour le texte
 				temps.appendChild(texte_temps);										// place le texte dans <h6>...</h6>
 				temps.setAttribute('class','temps_restant_event');					// assigne la classe
